@@ -1,0 +1,67 @@
+.modal {
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: rgba(67, 67, 67, 0.8);
+  /*il colore sopra sbiadisce la pagina sotto il modal*/
+  backdrop-filter: blur(0px);
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000000;
+}
+/*La z-indexproprietà specifica l'ordine di stack di un elemento.
+
+Un elemento con un ordine di stack maggiore è sempre davanti a un elemento con un ordine di stack inferiore.
+
+Nota: z-index funziona solo su elementi posizionati (posizione: assoluta, posizione: relativa, posizione: fissa o posizione: appiccicosa) e elementi flessibili (elementi che sono figli diretti di display: elementi flessibili).
+
+Nota: se due elementi posizionati si sovrappongono senza uno z-index specificato, l'elemento posizionato per ultimo nel codice HTML verrà mostrato in alto. */
+
+.modal-panel {
+  background: #050709;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 65px 150px;
+  border-radius: 5px;
+}
+
+.modal__message {
+  color: inherit;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__message--info {
+  color: rgb(136, 185, 249);
+}
+
+.modal__message--warn {
+  color: orange;
+}
+
+.modal__message--success {
+  color: rgb(188, 238, 101);
+}
+
+.modal__message--error {
+  color: rgb(249, 60, 60);
+}
+
+.modal-button {
+  color: inherit;
+  background-color: darkgrey;
+  border-radius: 2px;
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}

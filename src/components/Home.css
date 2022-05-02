@@ -1,0 +1,168 @@
+/* .background {
+  background-image:'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWlsayUyMHdheXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60';
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+  min-height: 100%;
+  height: 100vh;
+  z-index: -1;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+} */
+/*Position:relative in home serve perchè altrimenti quando abbasso il navbar la foto gli va sopra. Ma negli altri posti va tolto perche altrimenti input e onclick non funzionano. Oppure neppure qui, ma in nessun css. O tutti o nessuno*/
+
+/* .content {
+  min-height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.p1 {
+  font-family: cursive;
+  font-size:x-large;
+  color: rgb(237, 234, 200);
+
+  text-align: center;
+  padding: 20px;
+  margin: 35px;
+  background-color: rgba(12, 12, 13, 0.766);
+ 
+}
+
+.p2 {
+  font-family: cursive;
+  font-size: large;
+  color: rgb(237, 234, 200);
+ 
+  text-align: left;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgba(12, 12, 13, 0.766);
+  width: 250px;
+  float:right;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  box-sizing: border-box;
+} */
+.page-home {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+}
+
+.container1{
+  width: 80%;
+}
+
+.verse {
+  display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    font-size:15px;
+    font-family:monospace;
+    /* border-style: solid none solid none; */
+    line-height: 1.6;
+    color:var(--primary-color);
+}
+
+.text {
+  display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    padding: 2rem;
+    font-size:15px;
+    /* font-family:monospace; */
+    line-height: 1.6;
+    color:var(--primary-color);
+}
+
+
+
+
+/* @media screen and (max-width: 700px){
+  .slider {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .image {
+    width: 60%; 
+    height: auto;
+    border-radius: 10px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+  }
+
+  .right-arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: -1%;
+    font-size: 2rem;
+    color: rgb(213, 196, 16);
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border-style: solid;
+  }
+  
+  .left-arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: -1%;
+    font-size: 2rem;
+    color: rgb(213, 196, 16);
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border-style: solid;
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  
+} */

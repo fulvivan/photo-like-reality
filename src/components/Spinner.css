@@ -1,0 +1,26 @@
+.container-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* height: 100%; */
+  background-color: rgba(67, 67, 67, 0.8);
+  backdrop-filter: blur(0px);
+  /*il colore sopra sbiadisce la pagina sotto il modal*/
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 10000000; */
+}
+
+.spinner {
+  justify-content: center;
+  color:#0d0e10;
+  background-color: transparent;
+}
+
+/* .container--full {
+    height: 100%;
+  } */

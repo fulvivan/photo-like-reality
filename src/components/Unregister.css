@@ -1,0 +1,49 @@
+.background-unregister {
+  background-image: url('https://images.unsplash.com/photo-1600881217197-068e1d79ffb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGVsZXRlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1000&q=60');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  height: 100vh;
+  /* position: relative; */
+  z-index: -1;
+  transition: all 0.5s ease-out;
+}
+
+.field-unregister {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(252, 239, 221, 0.758);
+  font-size: 1rem;
+  cursor: text;
+}
+
+.button-unregister {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 5.5rem;
+  background-color: rgba(247, 201, 138, 0.568);
+}
+
+.container-unregister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.button-unregister:hover {
+  background-color: rgba(247, 202, 138, 0.959);
+}

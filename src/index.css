@@ -1,0 +1,152 @@
+/* RESETS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  text-decoration: none;
+  text-transform: none;
+  background: transparent;
+  /* background-color: rgb(12, 12, 13); */
+  outline: none;
+  tab-size: 0;
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  cursor: default;
+  /* font-family: 'Montserrat', sans-serif; */
+  list-style-type: none;
+  /*list-style-type toglie il puntino nero dagli elenchi, liste...*/
+}
+
+html,
+body {
+  /* min-width: 100vw;
+  min-height: 100vh; */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* height: 100%;
+  margin: 0; */
+}
+/*così non appare la horizontal scroll padding:0; margin:0; width:100%; */
+
+:root {
+  --primary-color: rgb(45, 43, 62);
+  --secondary-color: rgb(83, 99, 144);
+  --font-color: rgb(20, 19, 29);
+  --bg-color: rgba(236, 219, 205, 0.966);
+  --bg-color-nav: rgba(251, 234, 208, 0.784);
+  /* --heading-color: #292922; */
+}
+
+p {
+  font-family: cursive;
+}
+
+[data-theme="dark"] {
+  --primary-color: rgb(247, 240, 167);
+  --secondary-color: rgb(247, 240, 167);
+  --font-color: rgb(238, 223, 49);
+  --bg-color: rgb(20, 19, 29);
+  --bg-color-nav: rgba(20, 19, 29, 0.784);
+  --heading-color: #818cab;
+}
+/* background-color: rgb(12, 12, 13);
+color: rgb(238, 223, 49); */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+/* COMPONENTS */
+
+/* ----- titles ----- */
+/* h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+} */
+
+/* ----- containers ----- */
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .container--vertical {
+  flex-direction: column;
+}
+
+.container--gapped {
+  padding: 1rem;
+}
+
+.container--off {
+  display: none;
+}
+
+.container--full {
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* ----- forms ----- */
+/* .field {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: text;
+} */
+
+/* ----- buttons ----- */
+/* .button {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+} */
+
+/* .button--medium {
+  min-width: 5.5rem;
+}
+
+.button--dark {
+  background-color: lightsalmon;
+}
+
+.button--dark:hover {
+  background-color: salmon;
+}
+
+.button--warning:hover {
+  background-color: red;
+}
+
+.fav-button {
+  border-style: none;
+} */
+
+/* ----- lists ----- */
+/* ul {
+  list-style-type: none;
+} */
+
+/* ----- images ----- */
+/* img {
+  border-radius: 10px;
+} */

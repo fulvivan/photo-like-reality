@@ -1,0 +1,61 @@
+.button-favs {
+  /* border-radius: 5px;
+    border-style: solid;
+    border-width: 1px; */
+  margin: 5px;
+  /*margin crea spazio intorno all'elemento. Si può impostare differente per ogni lato, o un numero solo uguale per ogni lato*/
+  /* padding: 10px; */
+  /* background-color: rgb(199, 198, 198); */
+  font-size: 1rem;
+  cursor: pointer;
+  /* min-width: 5.5rem; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .button-back {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 10% 40%; */
+  /*margin crea spazio intorno all'elemento. Si può impostare differente per ogni lato, o un numero solo uguale per ogni lato*/
+  /* padding: 10px;
+  background-color: rgb(199, 198, 198);
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 5.5rem;
+} */
+
+.container-favs {
+  display: flex;
+  /* height: 40vh; */
+  /* flex-grow: 1; */
+  /* list-style: none; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: double;
+  margin: 10px;
+  border-width: 5px;
+
+  /*padding: 10px; */
+}
+
+.page-favs {
+  display: flex;
+  /* flex-direction: row; */
+  /*row mette le foto in fila orizzontale*/
+  /*wrap manda a capo le immagini, altrimenti trasbordano dalla pagina*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  padding: 10px;
+  /* background: rgb(15, 14, 14); */
+}
+
+.favs-photo {
+  cursor: pointer;
+  /* padding: 10px; */
+  transition: all 0.5s ease-out;
+}

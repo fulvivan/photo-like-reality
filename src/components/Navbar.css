@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  height: 75px;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  /* background-color: rgb(12, 12, 13);
+  color: rgb(238, 223, 49); */
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 2px;
+  left: 1%;
+  cursor: pointer;
+}
+
+.theme {
+  margin: 10px 5px 5px 5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 2%;
+}
+
+.home,
+.profile,
+.search,
+.favs,
+.register,
+.login {
+  text-decoration: none;
+  /* color: rgb(238, 223, 49); */
+  font-size: 15px;
+  padding: 10px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-flex;
+  color: var(--font-color);
+  font-family: cursive;
+}
+
+/* .register,
+.login {
+  text-decoration: none;
+  color: rgb(238, 223, 49);
+  font-size: 15px;
+  padding: 10px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-flex;
+} */
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  /* .logo {
+    display: flex;
+    position: absolute;
+    text-align: center;
+  } */
+
+  .theme {
+    margin: 5px 40%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    /* background-color: rgba(12, 12, 13, 0.766); */
+    background-color: var(--bg-color-nav);
+    /* color: var(--font-color); */
+    /* background-color: transparent; */
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 90%;
+    /*così non appare horizontal scroll padding:0; margin:0; width:90%;*/
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  .home,
+  .profile,
+  .search,
+  .favs,
+  .register,
+  .login {
+    margin: 5px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+    /* color: rgb(238, 223, 49); */
+    padding: 10px 10px;
+    cursor: pointer;
+    flex-direction: column;
+    color: var(--font-color);
+  }
+
+  /* .register,
+  .login {
+    text-decoration: none;
+    color: rgb(238, 223, 49);
+    font-size: 15px;
+    padding: 10px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: inline-flex;
+  } */
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 15px;
+    /* color: rgb(238, 223, 49); */
+    /* background-color: rgb(12, 12, 13); */
+    color: var(--font-color);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    top: 25px;
+    right: 25px;
+  }
+}
