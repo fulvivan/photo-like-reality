@@ -38,7 +38,7 @@ function ThemeSwitch() {
     // toggleSwitch.addEventListener('change', switchTheme, false);
 
     return <>
-        <div class="theme-switch-wrapper">
+        <div className="theme-switch-wrapper">
             <label className="theme-switch" htmlFor="checkbox">
                 <input type="checkbox" id="checkbox" checked={switched ? true : false} onChange={switchTheme} />
                 <div className="slider round">

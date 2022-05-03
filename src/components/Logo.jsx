@@ -1,31 +1,16 @@
 import logger from "../utils/logger";
-import React, { useEffect } from "react";
-import PhotosLight from "../Images/PhotosLight.png";
-import PhotosDark from "../Images/PhotosDark.png";
+import  Photos from '../Images/Photos.svg'
 import "./Logo.css";
 
 function Logo() {
   logger.debug("Logo -> render");
 
-  // const [switched, setSwitched] = useState(false)
 
-
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
-
-    if (currentTheme) {
-        document.documentElement.setAttribute('data-theme', currentTheme)
-    }
-})
-
-  return <div className="logo">
-   {document.documentElement.setAttribute('data-theme', 'dark') ? (
-    <img src={PhotosLight} alt="logo" />
-  ) : (
-    <img src={PhotosDark} alt="logo" />
-  )}
-  </div>;
+  return <img className="logo" alt="logo" src={Photos} />
+ 
+  //  <Photos className="logo"/>
+//Questo sopra se importo Photos come un componente...import {reactComponente as Photos}
+ 
 }
 
 export default Logo;

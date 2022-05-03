@@ -71,7 +71,7 @@ function Detail() {
       {item && (
         <>
           <div className="card">
-            <img className="detail-image" src={item.urls.small} alt="" />
+            <img className="detail-image" src={item.urls.thumb} alt="" />
             {/* <h3 className="card__header">{item.name}</h3> */}
 
             <br />

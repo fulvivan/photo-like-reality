@@ -1,11 +1,14 @@
 .detail-image {
   /* max-width: 80vw; */
   cursor: default;
-  padding: 10px;
+  padding: 20px 0 0 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-body {
   cursor: pointer;
-  /* color: rgb(213, 196, 16); */
+  color: var(--link-color);
   border-style: none none solid none;
   width:fit-content;
 }
@@ -14,6 +17,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  color:var(--secondary-color)
   /* background: rgb(9, 8, 8); */
  
 }
@@ -27,11 +31,12 @@
   border-style: solid;
   border-width: 1px;
   margin: 15px 15px 15px 0px;
-  padding: 10px;
   /* background-color: transparent; */
-  font-size: 1rem;
+  font-size: 13px;
   cursor: pointer;
   min-width: 5.5rem;
+  width: 3px;
+  color: var(--font-color);
   /* background-color: rgba(222, 223, 224, 0.6); */
 }
 
