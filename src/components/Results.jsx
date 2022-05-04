@@ -80,9 +80,10 @@ function Results() {
 
   return (
     <>
-      <p className="p-results">Results: {query}</p>
+      <p className="p-results">Results for: {query}</p>
       {items && items.length ? (
         <ul className="box-photos-results">
+          
           {items.map(({ id, isFav, urls }) => (
             <li key={id} className="list-photos-results">
               <img
