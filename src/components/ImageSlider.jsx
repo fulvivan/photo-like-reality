@@ -41,6 +41,7 @@ const ImageSlider = ({ slides }) => {
               <img src={slide.image} alt="travel image" className="image" />
             )}
             
+            
           </div>
         );
       })}

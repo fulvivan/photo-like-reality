@@ -1,86 +1,145 @@
 .sliderPhotos {
-    position: relative;
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    /* background-color: var(--bg-color);
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  /* flex-grow: 1; */
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  /* background-color: var(--bg-color);
     color: var(--font-color); */
-    /* background-color: white; */
-    /* background-color: rgb(12, 12, 13); */
-  }
-  
-  .image {
-    width: 60%;
-    height: auto;
-    /* height: 40%; */
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* background-color: var(--bg-color);
+  /* background-color: white; */
+  /* background-color: rgb(12, 12, 13); */
+}
+
+.image {
+  /* width: 55%; */
+  height: 40vh;
+  /* position: relative; */
+  /* max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom; */
+
+  /* height: 40vh; */
+  /* flex-grow: 1; */
+  /* max-height: 100%;
+    min-width: 100%; */
+  /* object-fit: cover; */
+  /* height: 40%; */
+  border-radius: 10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: var(--bg-color);
     color: var(--font-color); */
-    /* opacity: 1;
+  /* opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08); */
-  }
-  
-  .right-arrow {
-    position: absolute;
+}
+
+.right-arrow {
+  color:var(--bg-color);
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-inverse);
+  border-radius: 50%;
+  /* top: 40%;
+    right: 27%;
+    
+    z-index: 1;
+    
+    user-select: none; */
+  /* background-color: red; */
+  /* border-style: solid; */
+  /* color: var(--secondary-color); */
+  /* font-size: 1.5rem; */
+
+  cursor: pointer;
+  bottom: -45px;
+  right: 44%;
+  position: absolute;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.left-arrow {
+  color:var(--bg-color);
+  width: 30px;
+  height: 30px;
+  background-color:var(--bg-inverse);
+  border-radius: 50%;
+
+  /* border-style: solid; */
+  /* color: var(--secondary-color); */
+  /* font-size: 1.5rem; */
+
+  cursor: pointer;
+  bottom: -45px;
+  left: 44%;
+  position: absolute;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+
+  /* position: absolute;
     top: 40%;
-    right: 22%;
+    left: 27%;
     font-size: 1.5rem;
     z-index: 1;
     cursor: pointer;
     user-select: none;
     background-color: transparent;
     border-style: solid;
-    color: var(--secondary-color);
+    color: var(--secondary-color); */
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}
+
+@media screen and (min-width: 900px) {
+  .image {
+    height: 65vh;
   }
-  
-  .left-arrow {
-    position: absolute;
-    top: 40%;
-    left: 22%;
-    font-size: 1.5rem;
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border-style: solid;
-    color: var(--secondary-color);
-  }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.02);
-  }
-  
-  @media screen and (max-width: 1300px) {
+}
+
+/* @media screen and (max-width: 1300px) {
     .right-arrow {
-      right: 17%;
+      right: 20%;
     }
   
     .left-arrow {
-      left: 17%;
+      left: 20%;
     }
   }
-  
-  @media screen and (max-width: 1100px) {
+
+  @media screen and (max-width: 1250px) {
     .right-arrow {
-      right: 16%;
+      right: 19%;
     }
   
     .left-arrow {
-      left: 16%;
+      left: 19%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .right-arrow {
+      right: 15%;
+    }
+  
+    .left-arrow {
+      left: 15%;
     }
   }
   
@@ -94,6 +153,16 @@
     }
   }
   
+  @media screen and (max-width: 800px) {
+    .right-arrow {
+      right: 14%;
+    }
+  
+    .left-arrow {
+      left: 14%;
+    }
+  }
+  
   @media screen and (max-width: 600px) {
     .right-arrow {
       right: 13%;
@@ -102,4 +171,4 @@
     .left-arrow {
       left: 13%;
     }
-  }
+  } */

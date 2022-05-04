@@ -106,11 +106,11 @@ function Favs() {
       </button> */}
 
       {items && items.length ? (
-        <ul className="page-favs">
+        <ul className="box-photos-favs">
           {items.map(({ id, urls, isFav }) => (
             <li
               key={id}
-              className="container-favs"
+              className="list-photos-favs"
              
             >
               {/* <h2>
@@ -118,7 +118,7 @@ function Favs() {
               </h2> */}
 
               <img
-                className="favs-photo"
+                className="photo-favs"
                 title="detail"
                 src={urls.thumb}
                 alt=""
@@ -136,6 +136,7 @@ function Favs() {
               </button>
             </li>
           ))}
+          <li className="photo-last-favs"></li>
         </ul>
       ) : null}
     </>

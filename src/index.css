@@ -35,11 +35,12 @@ body {
   --primary-color: rgb(45, 43, 62);
   --secondary-color: rgb(83, 99, 144);
   --font-color: rgb(20, 19, 29);
-  --bg-color: rgb(236, 219, 205);
-  --bg-color-nav: rgba(236, 219, 205, 0.851);
+  --bg-color: rgb(255, 254, 242);
+  --bg-color-nav: rgba(255, 254, 242, 0.904);
   --heading-color: rgb(41, 41, 34);
   --logo: invert(0.4) sepia(0.5) saturate(20) hue-rotate(208.8deg) brightness(0) ;
   --link-color: rgb(199, 5, 253);
+  --bg-inverse: rgb(20, 19, 29);
 }
 /*Per logo ho usato le proprietà di filter. E' abbastanza complesso, cercare su internet un generatore per filter properties. Ne ho uno in preferiti*/
 
@@ -49,10 +50,11 @@ body {
   --secondary-color: rgb(247, 240, 167);
   --font-color: rgb(238, 223, 49);
   --bg-color: rgb(20, 19, 29);
-  --bg-color-nav: rgba(20, 19, 29, 0.784);
+  --bg-color-nav: rgba(20, 19, 29, 0.827);
   --heading-color: #818cab;
   --logo:  invert(0.03) sepia(1) saturate(7.7) hue-rotate(0deg) brightness(1) ;
   --link-color: rgb(235, 188, 248);
+  --bg-inverse:rgb(247, 240, 167);
 }
 /* background-color: rgb(12, 12, 13);
 color: rgb(238, 223, 49); */

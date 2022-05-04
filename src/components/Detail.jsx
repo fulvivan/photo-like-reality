@@ -80,7 +80,7 @@ function Detail() {
                 Description: "{item.alt_description}"
               </p>
             </div> */}
-            <br />
+            
             <ul className="card__list">
               <li className="info-detail">
                 <span>
@@ -97,13 +97,13 @@ function Detail() {
                 </span>
               </li>
             </ul>
-            <br />
+            
             <div className="card-body">
               <a href={item.urls.full} className="card-body">
                 See photo
               </a>
             </div>
-            <br/>
+            
             <div className="info-detail">
               Save in Favs
               <button

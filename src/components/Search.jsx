@@ -15,6 +15,7 @@ function Search() {
     setQuery(query);
 
     navigate(`/search/items?query=${query}`);
+    
   };
 
   return (

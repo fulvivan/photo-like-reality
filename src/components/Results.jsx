@@ -11,8 +11,6 @@ function Results() {
 
   const { onFlowStart, onFlowEnd, onModal } = useContext(AppContext);
 
-  
-
   const navigate = useNavigate();
 
   const goToItem = (id) => navigate(`/search/items/item?id=${id}`);
@@ -24,8 +22,6 @@ function Results() {
   const query = queryParams.get("query");
 
   const { token } = sessionStorage;
-  
- 
 
   useEffect(() => {
     (async () => {
@@ -50,7 +46,7 @@ function Results() {
       }
     })();
   }, [query]);
-  console.log(items)
+  console.log(items);
 
   const toggleFav = async (item_id) => {
     try {
@@ -82,33 +78,41 @@ function Results() {
     }
   };
 
-  return items && items.length ? (
-    <ul className="container-page">
-      {items.map(({ id, isFav, urls }) => (
-        <li key={id} className="container-results" >
-          <img
-            className="results-photo"
-            title="detail"
-            src={urls.thumb}
-            alt=""
-            onClick={() => goToItem(id)}
-          />
-          <button
-            className="fav-button"
-            onClick={(event) => {
-              event.stopPropagation();
+  return (
+    <>
+      <p className="p-results">Results: {query}</p>
+      {items && items.length ? (
+        <ul className="box-photos-results">
+          {items.map(({ id, isFav, urls }) => (
+            <li key={id} className="list-photos-results">
+              <img
+                className="photo-results"
+                title="detail"
+                src={urls.thumb}
+                alt=""
+                onClick={() => goToItem(id)}
+              />
+              <button
+                className="fav-button"
+                onClick={(event) => {
+                  event.stopPropagation();
 
-              toggleFav(id);
-            }}
-          >
-            {isFav ? "🧡" : "🤍"}
-          </button>
-          {/* <p>{user.location}</p>
+                  toggleFav(id);
+                }}
+              >
+                {isFav ? "🧡" : "🤍"}
+              </button>
+              {/* <p>{user.location}</p>
           <p>{user.name}</p> */}
-        </li>
-      ))}
-    </ul>
-  ) : null;
+              
+            </li>
+           
+          ))}
+          <li className="photo-last-results"></li>
+        </ul>
+      ) : null}
+    </>
+  );
 }
 
 export default Results;

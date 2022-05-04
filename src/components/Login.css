@@ -41,11 +41,11 @@
     font-size: 1rem;
     cursor: pointer;
     min-width: 5.5rem;
-    background-color: rgba(103, 147, 70, 0.678);
+    background-color: rgba(103, 147, 70, 0.825);
   }
   
   .button-login:hover {
-    background-color: rgba(103, 147, 70, 0.944);
+    background-color: rgba(103, 147, 70);
   }
 
   .button-back {

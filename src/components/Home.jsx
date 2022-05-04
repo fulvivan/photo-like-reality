@@ -1,75 +1,10 @@
-import React, { useEffect, useState, useContext } from "react";
-import useQueryParams from "../hooks/use-query-params";
-import {searchItems} from '../logic'
 import "./Home.css";
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import logger from "../utils/logger";
-import AppContext from "./AppContext";
-import { useNavigate } from "react-router-dom";
 
 function Home() {
   logger.debug("Home -> render");
-
-   const [items, setItems] = useState();
-  // const queryParams = useQueryParams();
-  // const { token } = sessionStorage;
-  // const query = queryParams.get("landscape");
-  // const navigate = useNavigate();
-  // const goToItem = (id) => navigate(`/search/items/item?id=${id}`);
-  // const { onModal } = useContext(AppContext);
-
-  // useEffect(() => {
-  //   (async () => {
-  //     logger.debug("Results -> useEffect");
-
-  //     try {
-        
-
-  //       const resultsContainer = await searchItems(token, query);
-  //       console.log(resultsContainer);
-
-      
-
-  //       const photos = resultsContainer.results;
-  //       console.log(photos);
-
-  //       setItems(photos);
-  //     } catch ({ message }) {
-  
-
-  //       onModal(message, "warn");
-  //     }
-  //   })();
-  // }, [query]);
-
-  const landscapes = async () => {
-    const photos = await fetch(
-      "https://api.unsplash.com/search/photos?query=landscapes&per_page=20&client_id=H4XWB85U0K6PzqCLUkPQt_2qnlGnd8C5JORrZfjXOH0"
-    );
-    const resultsPhotos = await photos.json();
-    console.log(resultsPhotos);
-   
-  };
-
-  useEffect(() => {
-    const resultsContainer = landscapes();
-    const res = resultsContainer.results;
-     setItems(res);
-  }, []);
-
-
-
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem("theme")
-      ? localStorage.getItem("theme")
-      : null;
-
-    if (currentTheme) {
-      document.documentElement.setAttribute("data-theme", currentTheme);
-    }
-  });
 
   return (
     <>
@@ -77,7 +12,7 @@ function Home() {
         <ImageSlider slides={SliderData} />
       </div>
 
-      <div>
+      <div className="container-verse">
         <p className="verse">
           "In photography there is a reality so subtle that it becomes more real
           than reality"
@@ -90,36 +25,47 @@ function Home() {
           <br /> Then click on the photo you like and you will be able to know
           more details. <br />
           Don't forget to save it in favorites!
-          <br /><br />
+          <br />
+          <br />
           Look photos I found with word 'landscape'.
         </p>
       </div>
-      <ul className="container-page">
-        
-          <li  className="container-results" >
-            <img
-              className="results-photo"
-              title="detail"
-              src={landscapes.results}
-              alt=""
-            />
-          </li>
-        
-          </ul>
-
-      {/* <ul className="container-page">
-        {items.map(({ id, urls }) => (
-          <li key={id} className="container-results" >
-            <img
-              className="results-photo"
-              title="detail"
-              src={urls.thumb}
-              alt=""
-              onClick={() => goToItem(id)}
-            />
-          </li>
-        ))}
-          </ul> */}
+      <ul className="box-photos-home">
+        <li className="list-photos-home">
+           <img className="photo-home" src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
+        </li>
+        <li className="list-photos-home">
+           <img className="photo-home" src="https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
+       </li>
+        <li className="list-photos-home">
+           <img className="photo-home" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
+       </li>
+        <li className="list-photos-home">
+           <img className="photo-home" src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
+       </li>
+        <li className="list-photos-home">
+          <img className="photo-home" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
+       </li>
+        <li className="list-photos-home">
+          <img className="photo-home" src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="" />
+        </li>
+        <li className="list-photos-home">
+           <img className="photo-home" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="" />
+        </li>
+        <li className="list-photos-home">
+          <img className="photo-home" src="https://images.unsplash.com/photo-1513875528452-39400945934d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
+       </li>
+        <li className="list-photos-home">
+          <img className="photo-home" src="https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
+        </li>
+        <li className="list-photos-home">
+           <img className="photo-home" src="https://images.unsplash.com/photo-1444930694458-01babf71870c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
+        </li>
+        <li className="list-photos-home">
+          <img className="photo-home" src="https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
+       </li>
+       <li className="photo-last-home"></li>
+      </ul>
     </>
   );
 
