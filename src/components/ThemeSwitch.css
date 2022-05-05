@@ -22,7 +22,7 @@
 .slider {
     background-color: rgb(239, 173, 19);
     bottom: 0;
-    cursor: pointer;
+    cursor: none;
     left: 0;
     position: absolute;
     right: 0;

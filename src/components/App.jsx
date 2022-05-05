@@ -15,6 +15,7 @@ import Modal from "./Modal";
 import AppContext from "./AppContext";
 import Unregister from "./Unregister";
 import Update from "./Update";
+import Cursor from "./Cursor";
 
 function App() {
   logger.debug("App -> render");
@@ -52,6 +53,7 @@ function App() {
         }}
       >
         <Navbar />
+        <Cursor />
 
         {modal && (
           <Modal

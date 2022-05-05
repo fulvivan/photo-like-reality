@@ -41,7 +41,7 @@ function Search() {
           />
           <button
             type="submit"
-            className="button-search fa-solid fa-magnifying-glass"
+            className="button-search fa-solid fa-magnifying-glass clickable"
           />
         </form>
       </section>

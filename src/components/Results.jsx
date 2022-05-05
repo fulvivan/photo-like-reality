@@ -87,14 +87,14 @@ function Results() {
           {items.map(({ id, isFav, urls }) => (
             <li key={id} className="list-photos-results">
               <img
-                className="photo-results"
+                className="photo-results clickable"
                 title="detail"
                 src={urls.thumb}
                 alt=""
                 onClick={() => goToItem(id)}
               />
               <button
-                className="fav-button"
+                className="fav-button clickable"
                 onClick={(event) => {
                   event.stopPropagation();
 

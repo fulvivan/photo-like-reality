@@ -98,12 +98,12 @@ function Update() {
       />
 
       <div className="container-update">
-        <button type="submit" className="button-update button--dark">
+        <button type="submit" className="button-update button--dark clickable">
           Update
         </button>
         <button
           type="button"
-          className="button-update"
+          className="button-update clickable"
           onClick={(event) => {
             event.preventDefault();
 

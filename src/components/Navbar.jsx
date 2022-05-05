@@ -27,57 +27,57 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo" onClick={() => navigate("/")}>
+      <div className="logo clickable" onClick={() => navigate("/")}>
         <Logo />
       </div>
-     
 
       <ul
-        className={isMobile ? "nav-links-mobile" : "nav-links"}
+        className={
+          isMobile ? "nav-links-mobile" : "nav-links"
+        }
         onClick={() => setIsMobile(false)}
       >
         <Link to="/" className="">
-          <li className="home">Home</li>
+          <li className="home clickable">Home</li>
         </Link>
 
         <Link to="/search" className="">
-          <li className="search">Search</li>
+          <li className="search clickable">Search</li>
         </Link>
         <Link to="/favs" className="">
-          <li className="favs">Favs</li>
+          <li className="favs clickable">Favs</li>
         </Link>
         <>
           {view === "loggedOut" && (
             <Link to="/register" className="">
-              <li className="register">Register</li>
+              <li className="register clickable">Register</li>
             </Link>
           )}
           {view === "loggedOut" && (
             <Link to="/login" className="">
-              <li className="login">Login</li>
+              <li className="login clickable">Login</li>
             </Link>
           )}
           {view === "loggedIn" && (
             <Link to="/profile" className="">
-              <li className="profile">Profile</li>
+              <li className="profile clickable">Profile</li>
             </Link>
           )}
         </>
-        <div className="theme">
-      <ThemeSwitch/>
-      </div>
+        <div className="theme clickable">
+          <ThemeSwitch />
+        </div>
       </ul>
       <button
-        className="mobile-menu-icon"
+        className="mobile-menu-icon clickable"
         onClick={() => setIsMobile(!isMobile)}
       >
         {isMobile ? (
-          <i className="fas fa-times"></i>
+          <i className="fas fa-times clickable"></i>
         ) : (
-          <i className="fas fa-bars"></i>
+          <i className="fas fa-bars clickable"></i>
         )}
       </button>
-     
     </nav>
   );
 }

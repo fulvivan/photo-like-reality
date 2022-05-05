@@ -1,13 +1,13 @@
 .detail-image {
   /* max-width: 80vw; */
-  cursor: default;
+  /* cursor: default; */
   padding: 10px 0 0 0;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 .card-body {
-  cursor: pointer;
+  cursor: none;
   color: var(--link-color);
   border-style: none none solid none;
   width:fit-content;
@@ -33,7 +33,7 @@
   margin: 15px 15px 15px 0px;
   /* background-color: transparent; */
   font-size: 13px;
-  cursor: pointer;
+  cursor: none;
   min-width: 5.5rem;
   width: 3px;
   color: var(--font-color);
