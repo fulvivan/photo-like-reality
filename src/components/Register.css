@@ -28,7 +28,7 @@
     padding: 10px;
     background-color: rgba(68, 17, 16, 0.844);
     font-size: 1rem;
-    cursor: none;
+    cursor: text;
   }
   
   .button-register {
@@ -39,7 +39,7 @@
     padding: 10px;
     background-color: transparent;
     font-size: 1rem;
-    cursor: none;
+    cursor: pointer;
     min-width: 5.5rem;
     background-color: rgba(251, 144, 142, 0.538);
   }

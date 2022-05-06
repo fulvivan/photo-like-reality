@@ -118,14 +118,14 @@ function Favs() {
               </h2> */}
 
               <img
-                className="photo-favs clickable"
+                className="photo-favs "
                 title="detail"
                 src={urls.thumb}
                 alt=""
                  onClick={() => goToItem(id)}
               />
               <button
-                className="button-favs clickable"
+                className="button-favs "
                 onClick={(event) => {
                   event.stopPropagation();
                   //Siccome dentro della lista 'li' ci sono due onClick, quando si arriva al secondo, c'è la cosa che spara anche il primo.In questo modo si blocca al solo bottone del cuore. Non anche alla foto.

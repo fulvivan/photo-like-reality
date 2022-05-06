@@ -41,7 +41,7 @@ function ThemeSwitch() {
         <div className="theme-switch-wrapper">
             <label className="theme-switch" htmlFor="checkbox">
                 <input type="checkbox" id="checkbox" checked={switched ? true : false} onChange={switchTheme} />
-                <div className="slider round clickable">
+                <div className="slider round">
                 </div>
             </label>
             <p>Theme</p>

@@ -99,7 +99,7 @@ function Detail() {
             </ul>
             
             <div className="card-body">
-              <a href={item.urls.full} className="card-body clickable">
+              <a href={item.urls.full} className="card-body">
                 See photo
               </a>
             </div>
@@ -108,7 +108,7 @@ function Detail() {
               Save in Favs
               <button
                 // type="button"
-                className=" fav-button clickable"
+                className=" fav-button "
                 onClick={() => 
                 
                   toggleFav(item.id)
@@ -119,7 +119,7 @@ function Detail() {
             </div>
             <button
               type="button"
-              className="button-detail clickable"
+              className="button-detail "
               onClick={() => navigate(-1)}
             >
               Go back to results

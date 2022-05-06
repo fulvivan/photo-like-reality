@@ -19,7 +19,7 @@
   padding: 10px;
   background-color: rgba(252, 239, 221, 0.758);
   font-size: 1rem;
-  cursor: none;
+  cursor: text;
 }
 
 .button-unregister {
@@ -30,7 +30,7 @@
   padding: 10px;
   background-color: transparent;
   font-size: 1rem;
-  cursor: none;
+  cursor: pointer;
   min-width: 5.5rem;
   background-color: rgba(247, 201, 138, 0.568);
 }

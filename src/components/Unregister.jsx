@@ -56,12 +56,12 @@ function Unregister() {
         />
 
         <div className="container-unregister">
-          <button type="submit" className="button-unregister button--dark clickable">
+          <button type="submit" className="button-unregister button--dark">
             Unregister
           </button>
           <button
             type="button"
-            className="button-unregister clickable"
+            className="button-unregister"
             onClick={(event) => {
               event.preventDefault();
 

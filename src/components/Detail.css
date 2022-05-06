@@ -33,7 +33,7 @@
   margin: 15px 15px 15px 0px;
   /* background-color: transparent; */
   font-size: 13px;
-  cursor: none;
+  cursor: pointer;
   min-width: 5.5rem;
   width: 3px;
   color: var(--font-color);

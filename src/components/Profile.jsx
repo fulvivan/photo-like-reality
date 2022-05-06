@@ -25,7 +25,7 @@ function Profile({onReset}) {
 
           <button
             type="button"
-            className="button-profile clickable"
+            className="button-profile"
             onClick={goToUpdate}
           >
             Update
@@ -33,13 +33,13 @@ function Profile({onReset}) {
 
           <button
             type="button"
-            className="button-profile button-warning clickable"
+            className="button-profile button-warning"
             onClick={goToUnregister}
           >
             Unregister
           </button>
 
-          <button type="button" className="button-profile clickable" onClick={onReset}>
+          <button type="button" className="button-profile" onClick={onReset}>
             Sign out
           </button>
         </div>

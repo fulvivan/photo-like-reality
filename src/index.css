@@ -13,11 +13,16 @@
   tab-size: 0;
   padding-inline-end: 0;
   padding-inline-start: 0;
-  cursor: none;
+  cursor: default;
   font-family: cursive;
   list-style-type: none;
   /*list-style-type toglie il puntino nero dagli elenchi, liste...*/
 }
+/* @media only screen and (max-width:700px) {
+ *{
+   cursor: none;
+ }
+} */
 
 html,
 body {

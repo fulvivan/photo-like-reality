@@ -93,7 +93,7 @@ function Register() {
         >
           Sign in
         </button> */}
-        <button type="submit" className="button-register clickable">
+        <button type="submit" className="button-register">
           Register
         </button>
         {/* <button

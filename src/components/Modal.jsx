@@ -19,7 +19,7 @@ function Modal({ level, message, onAccept, onReset }) {
             {message === "jwt expired" ? "session expired" : message}
           </p>
           <button
-            className=" modal-button clickable"
+            className=" modal-button"
             type="button"
             onClick=
             {() => {

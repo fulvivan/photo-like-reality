@@ -41,7 +41,7 @@
 }
 
 .photo-favs {
-  cursor: none;
+  cursor: pointer;
   /* padding: 10px; */
   transition: all 0.5s ease-out;
   max-height: 100%;
@@ -97,7 +97,7 @@
   /* padding: 10px; */
   /* background-color: rgb(199, 198, 198); */
   font-size: 1rem;
-  cursor: none;
+  cursor: pointer;
   /* min-width: 5.5rem; */
   justify-content: center;
   align-items: center;

@@ -29,7 +29,7 @@
     padding: 10px;
     background-color: rgba(227, 245, 214, 0.678);
     font-size: 1rem;
-    cursor: none;
+    cursor: text;
   }
   
   .button-login {
@@ -39,7 +39,7 @@
     margin: 5px;
     padding: 10px;
     font-size: 1rem;
-    cursor: none;
+    cursor: pointer;
     min-width: 5.5rem;
     background-color: rgba(103, 147, 70, 0.825);
   }
@@ -57,7 +57,7 @@
     padding: 10px;
     background-color: rgb(199, 198, 198);
     font-size: 1rem;
-    cursor: none;
+    cursor: pointer;
     min-width: 5.5rem;
 
   } 

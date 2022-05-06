@@ -23,7 +23,7 @@
   top: 4px;
   left: 1%;
   fill: var(--logo-color);
-  cursor: none;
+  cursor: pointer;
 }
 
 .theme {
@@ -48,7 +48,7 @@
   font-size: 15px;
   padding: 10px 10px;
   margin: 0 10px;
-  cursor: none;
+  cursor: pointer;
   display: inline-flex;
   color: var(--font-color);
   font-family: cursive;
@@ -89,7 +89,7 @@
     /* display: block; */
     list-style: none;
     justify-content: center;
-  align-items: center;
+    align-items: center;
     /* background-color: rgba(12, 12, 13, 0.766); */
     background-color: var(--bg-color-nav);
     /* color: var(--font-color); */
@@ -97,11 +97,11 @@
     left: 0;
     right: 0;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  /* max-width: 97%; */
-  /* max-height: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* max-width: 97%; */
+    /* max-height: 100%; */
     top: 75px;
     transition: all 0.5s ease-out;
     /* width: 97%; */
@@ -124,7 +124,7 @@
     transition: all 0.5s ease;
     /* color: rgb(238, 223, 49); */
     padding: 15px 0;
-    cursor: none;
+    cursor: pointer;
     flex-direction: column;
     color: var(--font-color);
   }
@@ -152,5 +152,10 @@
     outline: none;
     top: 20px;
     right: 25px;
+    cursor: pointer;
   }
+}
+
+.menu-icon{
+  cursor: pointer;
 }

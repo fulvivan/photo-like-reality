@@ -56,7 +56,7 @@
   /* color: var(--secondary-color); */
   /* font-size: 1.5rem; */
 
-  cursor: none;
+  cursor: pointer;
   bottom: -45px;
   right: 44%;
   position: absolute;
@@ -76,7 +76,7 @@
   /* color: var(--secondary-color); */
   /* font-size: 1.5rem; */
 
-  cursor: none;
+  cursor: pointer;
   bottom: -45px;
   left: 44%;
   position: absolute;
@@ -111,4 +111,14 @@
   .image {
     height: 65vh;
   }
+}
+
+
+@media (max-height: 550px) {
+ .left-arrow{
+   left: 40%;
+ }
+ .right-arrow{
+   right: 40%;
+ }
 }
