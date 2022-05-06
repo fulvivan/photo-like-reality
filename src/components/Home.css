@@ -141,6 +141,38 @@ width: 99%;
 }
 /*.photo-last-home è un <li> vuoto vhe aiuta l'impaginazione*/
 
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+/*Quando lo schermo viewport è più alto che largo*/
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+/*on piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+/*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
+
 /* @media screen and (max-width: 700px){
   .slider {
     position: relative;

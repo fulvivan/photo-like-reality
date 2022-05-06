@@ -1,5 +1,7 @@
 .cursor {
   pointer-events: none;
+  /* transition: all 100ms ease;
+  transition-property: opacity; */
 }
 
 .cursor__ball {
