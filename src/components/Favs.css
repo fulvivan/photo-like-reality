@@ -57,30 +57,30 @@
 /*.photo-last-favs è un <li> vuoto vhe aiuta l'impaginazione*/
 
 @media (max-aspect-ratio: 1/1) {
-  li {
+  .list-photos-results {
     height: 30vh;
   }
 }
 /*Quando lo schermo viewport è più alto che largo*/
 
 @media (max-height: 480px) {
-  li {
+  .list-photos-results {
     height: 80vh;
   }
 }
 /*on piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
 
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-  ul {
+  .box-photos-results {
     flex-direction: row;
   }
 
-  li {
+  .list-photos-results {
     height: auto;
     width: 100%;
   }
 
-  img {
+  .photos-results {
     width: 100%;
     max-height: 75vh;
     min-width: 0;
