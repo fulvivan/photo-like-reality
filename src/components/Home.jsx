@@ -27,45 +27,98 @@ function Home() {
           Don't forget to save it in favorites!
           <br />
           <br />
-          Look photos I found with word 'landscape'.
+          Look photos I found with word 'Italy'.
         </p>
       </div>
       <ul className="box-photos-home">
         <li className="list-photos-home">
-           <img className="photo-home" src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1516108317508-6788f6a160e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aXRhbHl8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+            alt=""
+          />
         </li>
         <li className="list-photos-home">
-           <img className="photo-home" src="https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
-       </li>
-        <li className="list-photos-home">
-           <img className="photo-home" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
-       </li>
-        <li className="list-photos-home">
-           <img className="photo-home" src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
-       </li>
-        <li className="list-photos-home">
-          <img className="photo-home" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60" alt="" />
-       </li>
-        <li className="list-photos-home">
-          <img className="photo-home" src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="" />
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1615731022580-ffb2f9e45960?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGl0YWx5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
         </li>
         <li className="list-photos-home">
-           <img className="photo-home" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="" />
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbHl8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </li>
+
+        <li className="list-photos-home">
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1602532769886-b2d169960426?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGl0YWx5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
         </li>
         <li className="list-photos-home">
-          <img className="photo-home" src="https://images.unsplash.com/photo-1513875528452-39400945934d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
-       </li>
-        <li className="list-photos-home">
-          <img className="photo-home" src="https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aXRhbHl8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
         </li>
         <li className="list-photos-home">
-           <img className="photo-home" src="https://images.unsplash.com/photo-1444930694458-01babf71870c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aXRhbHl8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
         </li>
         <li className="list-photos-home">
-          <img className="photo-home" src="https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGxhbmRzY2FwZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="" />
-       </li>
-       <li className="photo-last-home"></li>
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1568708090021-556f292b4fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGl0YWx5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </li>
+        <li className="list-photos-home">
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1561716514-daea32af173e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aXRhbHl8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </li>
+
+        <li className="list-photos-home">
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1570025796121-87d2d9b69ca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            alt=""
+          />
+        </li>
+
+        <li className="list-photos-home">
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1532117472055-4d0734b51f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGl0YWx5fGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </li>
+
+        <li className="list-photos-home">
+          <img
+            className="photo-home"
+            src="https://images.unsplash.com/photo-1591574219889-0e7af0a0f129?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGl0YWx5fGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </li>
+
+        <li className="photo-last-home"></li>
       </ul>
+
+      <div>
+        <p className="text">Now you! Go to 'Search' and find your photos!</p>
+      </div>
     </>
   );
 

@@ -104,7 +104,7 @@ function Results() {
                 {isFav ? "🧡" : "🤍"}
               </button>
               {/* <p>{user.location}</p>
-          <p>{user.name}</p> */}
+             <p>{user.name}</p> */}
               
             </li>
            

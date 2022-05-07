@@ -58,6 +58,7 @@ Nota: se due elementi posizionati si sovrappongono senza uno z-index specificato
 .modal-button {
   color: inherit;
   background-color: darkgrey;
+  color: black;
   border-radius: 2px;
   padding: 5px;
   position: absolute;
