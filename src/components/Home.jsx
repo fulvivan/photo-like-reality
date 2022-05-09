@@ -3,6 +3,7 @@ import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import logger from "../utils/logger";
 
+
 function Home() {
   logger.debug("Home -> render");
 
@@ -10,6 +11,7 @@ function Home() {
     <>
       <div className="page-home">
         <ImageSlider slides={SliderData} />
+       
       </div>
 
       <div className="container-verse">

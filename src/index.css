@@ -43,7 +43,7 @@ body {
   --bg-color: rgb(255, 254, 242);
   --bg-color-nav: rgba(255, 254, 242, 0.904);
   --heading-color: rgb(41, 41, 34);
-  --logo: invert(0.4) sepia(0.5) saturate(20) hue-rotate(208.8deg) brightness(0) ;
+  --logo: brightness(0) saturate(100%) invert(8%) sepia(1%) saturate(1301%) hue-rotate(348deg) brightness(84%) contrast(99%); 
   --link-color: rgb(199, 5, 253);
   --bg-inverse: rgb(18, 18, 18);
 }
@@ -57,9 +57,9 @@ body {
   --bg-color:  rgb(18, 18, 18); ;
   --bg-color-nav: rgba(18, 18, 18, 0.827);
   --heading-color: #818cab;
-  --logo:  invert(0.03) sepia(1) saturate(7.7) hue-rotate(0deg) brightness(1) ;
+  --logo: brightness(0) saturate(100%) invert(90%) sepia(60%) saturate(373%) hue-rotate(326deg) brightness(105%) contrast(94%);
   --link-color: rgb(235, 188, 248);
-  --bg-inverse:rgb(247, 240, 167);
+  --bg-inverse:rgb(255, 254, 242);
 }
 /* background-color: rgb(12, 12, 13);
 color: rgb(238, 223, 49); */

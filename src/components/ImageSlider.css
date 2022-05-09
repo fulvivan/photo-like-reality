@@ -16,29 +16,31 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
-
-
 }
 
 .image {
-  height: 40vh;
-width: auto;
-  border-radius: 10px;
+  height: 65vh;
+  width: auto;
+  border-radius: 0px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  border-style: solid;
+  border-color: rgb(18, 18, 18);
+  padding: 3% 3% 14% 3%;
+  background-color: rgb(255, 254, 242);
 }
 
 .right-arrow {
-  color: var(--bg-color);
-  width: 30px;
-  height: 30px;
-  background-color: var(--bg-inverse);
-  border-radius: 50%;
+  color: var(--bg-inverse) ;
+  /* width: 30px;
+  height: 30px; */
+  /* background-color: var(--bg-inverse);
+  border-radius: 50%; */
 
   cursor: pointer;
   bottom: -45px;
-  right: 44%;
+  right: 45%;
   position: absolute;
   text-align: center;
   line-height: 30px;
@@ -46,38 +48,41 @@ width: auto;
 }
 
 .left-arrow {
-  color: var(--bg-color);
-  width: 30px;
-  height: 30px;
-  background-color: var(--bg-inverse);
-  border-radius: 50%;
+  color:  var(--bg-inverse);
+  /* width: 30px;
+  height: 30px; */
+  /* background-color: var(--bg-inverse);
+  border-radius: 50%; */
 
   cursor: pointer;
   bottom: -45px;
-  left: 44%;
+  left: 45%;
   position: absolute;
   text-align: center;
   line-height: 30px;
   display: inline-block;
-  
 }
 
 .slide {
-  opacity: 0;
-  /* transition-duration: 1s ease; */
+  /* opacity: 0; */
   transition: all 0.5s ease-in-out;
 }
 
 .slide.active {
-  opacity: 1;
+  /* opacity: 1; */
   transition-duration: 0.5s;
   /* transform: scale(1.02); */
-  
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 700px) {
   .image {
-    height: 65vh;
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image {
+    height: 45vh;
   }
 }
 

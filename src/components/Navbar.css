@@ -22,12 +22,13 @@
   position: absolute;
   top: 4px;
   left: 1%;
-  fill: var(--logo-color);
+  /* fill: var(--primary-color); */
   cursor: pointer;
 }
 
 .theme {
   margin: 10px 5px 5px 5px;
+  color: var(--primary-color);
 }
 
 .nav-links {
@@ -50,7 +51,7 @@
   margin: 0 10px;
   cursor: pointer;
   display: inline-flex;
-  color: var(--font-color);
+  color: var(--primary-color);
   font-family: cursive;
 }
 
@@ -78,6 +79,7 @@
 
   .theme {
     margin: 5px 40%;
+    color: var(--primary-color);
   }
 
   .nav-links {
@@ -126,7 +128,7 @@
     padding: 15px 0;
     cursor: pointer;
     flex-direction: column;
-    color: var(--font-color);
+    color: var(--primary-color);
   }
 
   /* .register,
@@ -146,7 +148,7 @@
     font-size: 20px;
     /* color: rgb(238, 223, 49); */
     /* background-color: rgb(12, 12, 13); */
-    color: var(--font-color);
+    color: var(--primary-color);
     background-color: transparent;
     border: none;
     outline: none;
