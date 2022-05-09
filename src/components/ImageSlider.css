@@ -93,8 +93,10 @@
 @media (max-width: 560px) {
   .left-arrow {
     left: 40%;
+    bottom: 3%;
   }
   .right-arrow {
     right: 40%;
+    bottom: 3%;
   }
 }
