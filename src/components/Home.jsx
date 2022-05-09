@@ -119,7 +119,7 @@ function Home() {
       </ul>
 
       <div>
-        <p className="text">Now you! Go to 'Search' and find your photos!</p>
+        <p className="text-bottom">Now you! Go to 'Search' and find your photos!</p>
       </div>
     </>
   );

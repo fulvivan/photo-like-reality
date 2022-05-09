@@ -22,7 +22,7 @@ const ImageSlider = ({ slides }) => {
 
   return (
  
-       <section className="sliderPhotos">
+    <section className="sliderPhotos">
       <button
         className="left-arrow fa-solid fa-chevron-left "
         onClick={prevSlide}

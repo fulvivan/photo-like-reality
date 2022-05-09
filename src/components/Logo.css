@@ -2,8 +2,8 @@
 
 .logo {
   display: block;
-  width: 80px;
-  height: 60px;
+  /* width: 80px; */
+  height: 70px;
   margin:auto;
   filter: var( --logo );
   background: transparent;

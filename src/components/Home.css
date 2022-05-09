@@ -82,16 +82,16 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem;
-   
-    font-size:15px;
+   background-color: rgb(183, 183, 183);
+    font-size:18px;
     font-family:monospace;
     /* border-style: solid none solid none; */
     line-height: 1.6;
-    color:var(--primary-color);
+    color: rgb(18, 18, 18);
 }
 
 .container-verse {
-  margin: 25px 0 0 0;
+  margin: 0px 0 0 0;
 }
 
 .text {
@@ -104,6 +104,18 @@
     /* font-family:monospace; */
     line-height: 1.6;
     color:var(--primary-color);
+}
+
+.text-bottom{
+  display:flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  padding: 2% 2% 15% 2%;
+  font-size:25px;
+  /* font-family:monospace; */
+  line-height: 1.6;
+  color:var(--primary-color);
 }
 
 /* .containerImages {
@@ -152,6 +164,7 @@ width: 99%;
   .list-photos-results {
     height: 80vh;
   }
+ 
 }
 /*con piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
 
@@ -170,8 +183,16 @@ width: 99%;
     max-height: 75vh;
     min-width: 0;
   }
+
+  
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
+
+@media screen and (max-width: 700px) {
+  .verse{
+    font-size:15px;
+  }
+}
 
 /* @media screen and (max-width: 700px){
   .slider {

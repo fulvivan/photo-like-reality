@@ -9,7 +9,7 @@
   justify-content: space-around;
   position: relative;
   align-items: center;
-  height: 75px;
+  height: 95px;
   background-color: var(--bg-color);
   color: var(--font-color);
   /* background-color: rgb(12, 12, 13);
@@ -17,11 +17,11 @@
   z-index: 10;
 }
 
-.logo {
+.logo-nav {
   display: flex;
   position: absolute;
-  top: 4px;
-  left: 1%;
+  top: 10px;
+  left: 2%;
   /* fill: var(--primary-color); */
   cursor: pointer;
 }
@@ -152,7 +152,7 @@
     background-color: transparent;
     border: none;
     outline: none;
-    top: 20px;
+    top: 28px;
     right: 25px;
     cursor: pointer;
   }

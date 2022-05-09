@@ -15,7 +15,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  /* margin: 10px; */
+  padding: 2px;
+ 
+  background-color: rgb(183, 183, 183);
 }
 
 .image {
@@ -32,14 +35,14 @@
 }
 
 .right-arrow {
-  color: var(--bg-inverse) ;
+  color: rgb(18,18,18) ;
   /* width: 30px;
   height: 30px; */
   /* background-color: var(--bg-inverse);
   border-radius: 50%; */
 
   cursor: pointer;
-  bottom: -45px;
+  bottom: 5%;
   right: 45%;
   position: absolute;
   text-align: center;
@@ -48,14 +51,14 @@
 }
 
 .left-arrow {
-  color:  var(--bg-inverse);
+  color:  rgb(18,18,18);
   /* width: 30px;
   height: 30px; */
   /* background-color: var(--bg-inverse);
   border-radius: 50%; */
 
   cursor: pointer;
-  bottom: -45px;
+  bottom: 5%;
   left: 45%;
   position: absolute;
   text-align: center;
