@@ -19,8 +19,8 @@
 }
 
 .image {
-  height: 65vh;
-  width: auto;
+  height: auto;
+  width: 45vw;
   border-radius: 0px;
   display: flex;
   margin-left: auto;
@@ -76,13 +76,13 @@
 
 @media screen and (max-width: 700px) {
   .image {
-    height: 55vh;
+    width: 55vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   .image {
-    height: 40vh;
+    width: 45vw;
   }
 }
 
