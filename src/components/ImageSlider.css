@@ -82,19 +82,25 @@
   .image {
     width: 55vw;
   }
+  .left-arrow{
+    bottom: 3%;
+  }
+  .right-arrow{
+    bottom: 3%;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .image {
-    width: 50vw;
+    width: 55vw;
   }
   .left-arrow {
     left: 40%;
-    bottom: 3%;
+    bottom: 1%;
   }
   .right-arrow {
     right: 40%;
-    bottom: 3%;
+    bottom: 1%;
   }
 }
 
@@ -109,7 +115,7 @@
   }
 } */
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 480px) {
  .left-arrow{
    bottom: 1%;
  }
@@ -121,5 +127,5 @@
  .image {
   width: 50vw;
 }
-}
+} */
 
