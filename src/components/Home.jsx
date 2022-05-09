@@ -3,24 +3,25 @@ import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import logger from "../utils/logger";
 
-
 function Home() {
   logger.debug("Home -> render");
 
   return (
     <>
       <div className="page-home">
-        <ImageSlider slides={SliderData} />
        
+
+        <ImageSlider slides={SliderData} />
       </div>
 
-      <div className="container-verse">
-        <p className="verse">
-          "In photography there is a reality so subtle that it becomes more real
-          than reality"
-          <br /> -Alfred Stieglitz-
-        </p>
-      </div>
+       <div className="container-verse">
+          <p className="verse">
+            "In photography there is a reality so subtle that it becomes more
+            real than reality"
+            <br /> -Alfred Stieglitz-
+          </p>
+        </div>
+
       <div>
         <p className="text">
           Search for photos in the search bar.
@@ -119,7 +120,9 @@ function Home() {
       </ul>
 
       <div>
-        <p className="text-bottom">Now you! Go to 'Search' and find your photos!</p>
+        <p className="text-bottom">
+          Now you! Go to 'Search' and find your photos!
+        </p>
       </div>
     </>
   );

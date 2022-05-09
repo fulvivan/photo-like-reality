@@ -18,7 +18,7 @@
   /* margin: 10px; */
   padding: 2px;
  
-  background-color: rgb(183, 183, 183);
+  /* background-color: rgb(183, 183, 183); */
 }
 
 .image {
@@ -26,12 +26,13 @@
   width: 45vw;
   border-radius: 0px;
   display: flex;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
   border-color: rgb(18, 18, 18);
   padding: 3% 3% 14% 3%;
-  background-color: rgb(255, 254, 242);
+  background-color: rgb(213, 213, 213);
 }
 
 .right-arrow {
