@@ -24,6 +24,7 @@
 .image {
   height: auto;
   width: 45vw;
+  overflow: hidden;
   border-radius: 0px;
   display: flex;
   margin-top: 15%;
@@ -80,6 +81,7 @@
 
 @media screen and (max-width: 700px) {
   .image {
+   
     width: 55vw;
   }
   .left-arrow{
@@ -92,6 +94,7 @@
 
 @media screen and (max-width: 480px) {
   .image {
+  
     width: 55vw;
   }
   .left-arrow {

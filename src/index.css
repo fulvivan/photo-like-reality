@@ -40,7 +40,7 @@ body {
   --primary-color: rgb(45, 43, 62);
   --secondary-color: rgb(83, 99, 144);
   --font-color: rgb(18, 18, 18);
-  --bg-color: rgb(255, 254, 242);
+  --bg-color: rgb(236, 236, 228);
   --bg-color-nav: rgba(255, 254, 242, 0.904);
   --heading-color: rgb(41, 41, 34);
   --logo: brightness(0) saturate(100%) invert(8%) sepia(1%) saturate(1301%) hue-rotate(348deg) brightness(84%) contrast(99%); 
