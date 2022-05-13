@@ -85,6 +85,7 @@ border-width:1px;
   .theme {
     margin: 5px;
     color: var(--primary-color);
+    text-align: center;
   }
 
   .nav-links {
