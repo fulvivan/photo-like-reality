@@ -1,86 +1,14 @@
-/* .background {
-  background-image:'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWlsayUyMHdheXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1000&q=60';
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:cover;
-  background-position: center;
-  min-height: 100%;
-  height: 100vh;
-  z-index: -1;
-  box-sizing: border-box;
-  transition: all 0.5s ease-out;
-} */
-/*Position:relative in home serve perchè altrimenti quando abbasso il navbar la foto gli va sopra. Ma negli altri posti va tolto perche altrimenti input e onclick non funzionano. Oppure neppure qui, ma in nessun css. O tutti o nessuno*/
-
-/* .content {
-  min-height: 100%;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.p1 {
-  font-family: cursive;
-  font-size:x-large;
-  color: rgb(237, 234, 200);
-
-  text-align: center;
-  padding: 20px;
-  margin: 35px;
-  background-color: rgba(12, 12, 13, 0.766);
- 
-}
-
-.p2 {
-  font-family: cursive;
-  font-size: large;
-  color: rgb(237, 234, 200);
- 
-  text-align: left;
-  padding: 10px;
-  margin: 20px;
-  background-color: rgba(12, 12, 13, 0.766);
-  width: 250px;
-  float:right;
-} */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* body {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  box-sizing: border-box;
-} */
-/* .page-home {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-} */
 
-/* .container1{
-  width: 80%;
-} */
-
-.gradient{
+.gradient {
   z-index: 1;
-	background:var(--gradient);
-	background-size: 400% 400%;
-	width: 100%;
-  /* position: fixed; */
-	/* height: 100vh; */
-	/* animation: animate 15s ease infinite; */
+  background: var(--gradient);
+  background-size: 400% 400%;
+  width: 100%;
   animation: 30s linear infinite running animate;
   animation-direction: alternate;
   background-attachment: fixed;
@@ -88,7 +16,9 @@
 
 /*attacment fixed così il colore è già caricato in tutta la pagina e non si vede la striscia bianca sotto facendo scroll, perche deve caricarsi.*/
 
-
+.container-verse {
+  margin: 0px 0 0 0;
+}
 
 .verse {
   display: flex;
@@ -96,29 +26,18 @@
   align-items: center;
   flex-direction: column;
   padding: 2rem;
-  /* background-color: rgb(183, 183, 183); */
   font-size: 19px;
   font-family: monospace;
   font-weight: bolder;
-
-  /* padding: 35% 0% 0% 10%; */
-  /* border-style: solid none solid none; */
   line-height: 1.6;
   color: var(--primary-color);
-}
-
-.container-verse {
-  margin: 0px 0 0 0;
 }
 
 .text {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* flex-direction: column; */
   padding: 2rem;
   font-size: 18px;
-  /* font-family:monospace; */
   line-height: 1.6;
   color: var(--primary-color);
 }
@@ -126,24 +45,12 @@
 .text-bottom {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* flex-direction: column; */
   padding: 2% 3% 15% 3%;
   font-size: 25px;
-  /* font-family:monospace; */
   line-height: 1.6;
   color: var(--primary-color);
+  font-weight: bold;
 }
-
-/* .containerImages {
-  display: flex;
-  justify-content: center; */
-/* align-items: center; */
-/* flex-direction: column; */
-/* flex-direction: row;
-    align-items: stretch;
-width: 99%;
-} */
 
 .box-photos-home {
   display: flex;
@@ -164,23 +71,12 @@ width: 99%;
   padding: 1px;
   filter: grayscale(100%); /*IE6-9*/
   -webkit-filter: grayscale(100%); /*chrome- safari-*/
-
 }
 
 .photo-home:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
-
 }
-
-/* @keyframes from_left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-} */
 
 .photo-last-home {
   flex-grow: 10;
@@ -188,15 +84,15 @@ width: 99%;
 /*.photo-last-home è un <li> vuoto vhe aiuta l'impaginazione*/
 
 @keyframes animate {
-	0% {
-		background-position: 0%;
-	}
-	/* 50% {
+  0% {
+    background-position: 0%;
+  }
+  /* 50% {
 		background-position: 100% 50%;
 	} */
-	100% {
-		background-position: 100%;
-	}
+  100% {
+    background-position: 100%;
+  }
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -228,7 +124,7 @@ width: 99%;
     max-height: 75vh;
     min-width: 0;
     filter: none;
-  -webkit-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
   }
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
@@ -241,66 +137,3 @@ width: 99%;
     font-size: 15px;
   }
 }
-
-/* @media screen and (max-width: 700px){
-  .slider {
-    position: relative;
-    height: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-  }
-
-  .image {
-    width: 60%; 
-    height: auto;
-    border-radius: 10px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-
-    
-  }
-
-  .right-arrow {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: -1%;
-    font-size: 2rem;
-    color: rgb(213, 196, 16);
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border-style: solid;
-  }
-  
-  .left-arrow {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: -1%;
-    font-size: 2rem;
-    color: rgb(213, 196, 16);
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border-style: solid;
-  }
-
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
-  
-} */

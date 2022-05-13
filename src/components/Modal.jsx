@@ -21,8 +21,7 @@ function Modal({ level, message, onAccept, onReset }) {
           <button
             className=" modal-button"
             type="button"
-            onClick=
-            {() => {
+            onClick={() => {
               if (message === "jwt expired") {
                 onReset();
                 onAccept();

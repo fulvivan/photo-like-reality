@@ -6,9 +6,7 @@
   background-position: center;
   min-height: 100%;
   height: 100vh;
-  /* position: relative; */
   z-index: -1;
-  /* box-sizing: border-box; */
   transition: all 0.5s ease-out;
 }
 
@@ -47,17 +45,3 @@
   .button-login:hover {
     background-color: rgba(103, 147, 70);
   }
-
-  .button-back {
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    margin: 10% 40%;
-    /*margin crea spazio intorno all'elemento. Si può impostare differente per ogni lato, o un numero solo uguale per ogni lato*/
-    padding: 10px;
-    background-color: rgb(199, 198, 198);
-    font-size: 1rem;
-    cursor: pointer;
-    min-width: 5.5rem;
-
-  } 

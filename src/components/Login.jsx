@@ -67,31 +67,9 @@ function Login() {
         />
 
         <div className="container-login">
-          {/* <button
-          type="button"
-          className="button-login"
-          onClick={(event) => {
-            event.preventDefault();
-
-            onRegister();
-          }}
-        >
-          Register/Registrati
-        </button> */}
           <button type="submit" className="button-login">
             Login
           </button>
-          {/* <button
-          type="button"
-          className="button-back"
-          onClick={(event) => {
-            event.preventDefault();
-
-            navigate("/");
-          }}
-        >
-          Go back to home
-        </button> */}
         </div>
       </form>
     </div>

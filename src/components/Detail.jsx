@@ -70,7 +70,6 @@ function Detail() {
         <>
           <div className="">
             <img className="detail-image" src={item.urls.thumb} alt="" />
-            {/* <h3 className="card__header">{item.name}</h3> */}
 
             <ul className="list-detail">
               <li className="info-detail">
@@ -100,7 +99,6 @@ function Detail() {
               <div className="info-detail">
                 Save in Favs
                 <button
-                  // type="button"
                   className=" fav-detail"
                   onClick={() => toggleFav(item.id)}
                 >
@@ -116,14 +114,6 @@ function Detail() {
               </button>
             </ul>
           </div>
-          {/* <button type="button" className="button button--medium" onClick={onBack}>Back to Results</button>
-            <h2>{item.name}</h2>
-            <img className="home__detail-image" src={item.images[0]} alt="" />
-            <p>{item.description}</p>
-            <span>{item.price}</span>
-            <button type='button' className='button' onClick={() => onToggle(item_id)}>{item.isFav ? '🧡' : '🤍'}</button>
-            <span>Colors: {item.colors}</span>
-            <a href={item.url}>Visit the store</a> */}
         </>
       )}
     </div>

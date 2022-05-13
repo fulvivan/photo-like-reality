@@ -1,6 +1,4 @@
 .modal {
-  /* width: 100vw;
-  height: 100vh; */
   background-color: rgba(67, 67, 67, 0.8);
   /*il colore sopra sbiadisce la pagina sotto il modal*/
   backdrop-filter: blur(0px);

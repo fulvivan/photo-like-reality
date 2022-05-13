@@ -1,6 +1,4 @@
 import "./Home.css";
-// import ImageSlider from "./ImageSlider";
-// import { SliderData } from "./SliderData";
 import logger from "../utils/logger";
 import Slider from "./Slider/Slider";
 
@@ -17,8 +15,6 @@ function Home() {
         </p>
 
         <Slider />
-
-        {/* <ImageSlider slides={SliderData} /> */}
       </div>
 
       <p className="text">
@@ -39,6 +35,7 @@ function Home() {
             alt=""
           />
         </li>
+
         <li className="list-photos-home">
           <img
             className="photo-home"
@@ -46,6 +43,7 @@ function Home() {
             alt=""
           />
         </li>
+
         <li className="list-photos-home">
           <img
             className="photo-home"
@@ -61,6 +59,7 @@ function Home() {
             alt=""
           />
         </li>
+
         <li className="list-photos-home">
           <img
             className="photo-home"
@@ -68,6 +67,7 @@ function Home() {
             alt=""
           />
         </li>
+
         <li className="list-photos-home">
           <img
             className="photo-home"
@@ -75,6 +75,7 @@ function Home() {
             alt=""
           />
         </li>
+
         <li className="list-photos-home">
           <img
             className="photo-home"
@@ -82,6 +83,7 @@ function Home() {
             alt=""
           />
         </li>
+
         <li className="list-photos-home">
           <img
             className="photo-home"
@@ -119,7 +121,7 @@ function Home() {
 
       <div>
         <p className="text-bottom">
-          Now it's your turn! Go to 'Search' and find your photos!
+          Now it's your turn! <br /> Go to 'Search' and find your photos!
         </p>
       </div>
     </div>
@@ -132,8 +134,6 @@ function Home() {
 
   //       {/* <button onClick={()=> onModal ("jwt expired","error")}>Modal</button>
   //}
-  //     </div>
-  // </section>
 }
 
 export default Home;
