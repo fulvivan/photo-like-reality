@@ -83,7 +83,7 @@ border-width:1px;
   } */
 
   .theme {
-    margin: 5px;
+    margin: 10px 40%;
     color: var(--primary-color);
     text-align: center;
   }
