@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from "react";
-// import { useParams } from 'react-router-dom'
 import { useQueryParams } from "../hooks";
 import { retrieveItem } from "../logic";
 import AppContext from "./AppContext";
@@ -14,7 +13,7 @@ function Detail() {
   const { onFlowStart, onFlowEnd, onModal } = useContext(AppContext);
 
   const navigate = useNavigate();
-  // const { id } = useParams()
+
   const [item, setItem] = useState();
 
   const queryParams = useQueryParams();
@@ -32,8 +31,7 @@ function Detail() {
       } else {
         await toggleFavItem(token, item_id);
 
-        setItem({ ...item, isFav: !item.isFav })
-          
+        setItem({ ...item, isFav: !item.isFav });
       }
 
       onFlowEnd();
@@ -67,63 +65,56 @@ function Detail() {
   }, [item_id]);
 
   return (
-    <div className="container-detail">
+    <div className="container-detail gradient">
       {item && (
         <>
-          <div className="card">
+          <div className="">
             <img className="detail-image" src={item.urls.thumb} alt="" />
             {/* <h3 className="card__header">{item.name}</h3> */}
 
-            <br />
-            {/* <div className="card__body">
-              <p className="card__body-description">
-                Description: "{item.alt_description}"
-              </p>
-            </div> */}
-            
-            <ul className="card__list">
+            <ul className="list-detail">
               <li className="info-detail">
                 <span>
                   {item.user.first_name} {item.user.last_name}
                 </span>
               </li>
+
               <li className="info-detail">
                 <span>{item.user.location}</span>
               </li>
-              <br />
+              <li className="info-detail">
+                <p>Description: "{item.alt_description}"</p>
+              </li>
               <li className="info-detail">
                 <span>
                   📷: {item.exif.make} - {item.exif.model}
                 </span>
               </li>
-            </ul>
-            
-            <div className="card-body">
-              <a href={item.urls.full} className="card-body">
-                See photo
-              </a>
-            </div>
-            
-            <div className="info-detail">
-              Save in Favs
+
+              <div className="info-detail card-body">
+                <a href={item.urls.full} className="card">
+                  Click here to see the picture bigger
+                </a>
+              </div>
+
+              <div className="info-detail">
+                Save in Favs
+                <button
+                  // type="button"
+                  className=" fav-detail"
+                  onClick={() => toggleFav(item.id)}
+                >
+                  {item.isFav ? "🧡" : "🤍"}
+                </button>
+              </div>
               <button
-                // type="button"
-                className=" fav-button "
-                onClick={() => 
-                
-                  toggleFav(item.id)
-                }
+                type="button"
+                className="button-detail "
+                onClick={() => navigate(-1)}
               >
-                {item.isFav ? "🧡" : "🤍"}
+                Go back
               </button>
-            </div>
-            <button
-              type="button"
-              className="button-detail "
-              onClick={() => navigate(-1)}
-            >
-              Go back to results
-            </button>
+            </ul>
           </div>
           {/* <button type="button" className="button button--medium" onClick={onBack}>Back to Results</button>
             <h2>{item.name}</h2>

@@ -79,22 +79,21 @@ function Results() {
   };
 
   return (
-    <>
+    <div className="gradient">
       <p className="p-results">Results for: {query}</p>
       {items && items.length ? (
         <ul className="box-photos-results">
-          
           {items.map(({ id, isFav, urls }) => (
             <li key={id} className="list-photos-results">
               <img
                 className="photo-results"
                 title="detail"
-                src={urls.thumb}
+                src={urls.small}
                 alt=""
                 onClick={() => goToItem(id)}
               />
               <button
-                className="fav-button"
+                className="fav-button-results"
                 onClick={(event) => {
                   event.stopPropagation();
 
@@ -103,16 +102,12 @@ function Results() {
               >
                 {isFav ? "🧡" : "🤍"}
               </button>
-              {/* <p>{user.location}</p>
-             <p>{user.name}</p> */}
-              
             </li>
-           
           ))}
           <li className="photo-last-results"></li>
         </ul>
       ) : null}
-    </>
+    </div>
   );
 }
 

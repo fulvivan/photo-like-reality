@@ -26,13 +26,12 @@ function Navbar() {
   }, [token]);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar gradient">
       <div className="logo-nav" onClick={() => navigate("/")}>
         <Logo />
       </div>
-
       <ul
-        className={isMobile ? "nav-links-mobile" : "nav-links"}
+        className={isMobile ? "nav-links-mobile gradient" : "nav-links"}
         onClick={() => setIsMobile(false)}
       >
         <Link to="/" className="">
@@ -66,6 +65,7 @@ function Navbar() {
           <ThemeSwitch />
         </div>
       </ul>
+      
       <button
         className="mobile-menu-icon "
         onClick={() => setIsMobile(!isMobile)}

@@ -50,7 +50,7 @@
   width: 250px;
   float:right;
 } */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,76 +60,90 @@
   color: var(--font-color);
   box-sizing: border-box;
 } */
-.page-home {
+/* .page-home {
   background-color: var(--bg-color);
   color: var(--font-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   display: flex;
-  /* margin-left: auto;
-  margin-right: auto;
-  width: 50%; */
-}
+} */
 
 /* .container1{
   width: 80%;
 } */
 
+.gradient{
+  z-index: 1;
+	background:var(--gradient);
+	background-size: 400% 400%;
+	width: 100%;
+  /* position: fixed; */
+	/* height: 100vh; */
+	/* animation: animate 15s ease infinite; */
+  animation: 30s linear infinite running animate;
+  animation-direction: alternate;
+  background-attachment: fixed;
+}
+
+/*attacment fixed così il colore è già caricato in tutta la pagina e non si vede la striscia bianca sotto facendo scroll, perche deve caricarsi.*/
+
+
+
 .verse {
-  display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
-   /* background-color: rgb(183, 183, 183); */
-    font-size:19px;
-    font-family:monospace;
-    /* padding: 35% 0% 0% 10%; */
-    /* border-style: solid none solid none; */
-    line-height: 1.6;
-    color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  /* background-color: rgb(183, 183, 183); */
+  font-size: 19px;
+  font-family: monospace;
+  font-weight: bolder;
+
+  /* padding: 35% 0% 0% 10%; */
+  /* border-style: solid none solid none; */
+  line-height: 1.6;
+  color: var(--primary-color);
 }
 
 .container-verse {
   margin: 0px 0 0 0;
-  
 }
 
 .text {
-  display:flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* flex-direction: column; */
-    padding: 2rem;
-    font-size:18px;
-    /* font-family:monospace; */
-    line-height: 1.6;
-    color:var(--primary-color);
-}
-
-.text-bottom{
-  display:flex;
+  display: flex;
   justify-content: center;
   /* align-items: center; */
   /* flex-direction: column; */
-  padding: 2% 2% 15% 2%;
-  font-size:25px;
+  padding: 2rem;
+  font-size: 18px;
   /* font-family:monospace; */
   line-height: 1.6;
-  color:var(--primary-color);
+  color: var(--primary-color);
+}
+
+.text-bottom {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  padding: 2% 3% 15% 3%;
+  font-size: 25px;
+  /* font-family:monospace; */
+  line-height: 1.6;
+  color: var(--primary-color);
 }
 
 /* .containerImages {
   display: flex;
   justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
-    /* flex-direction: row;
+/* align-items: center; */
+/* flex-direction: column; */
+/* flex-direction: row;
     align-items: stretch;
 width: 99%;
 } */
-
 
 .box-photos-home {
   display: flex;
@@ -148,59 +162,84 @@ width: 99%;
   object-fit: cover;
   vertical-align: bottom;
   padding: 1px;
+  filter: grayscale(100%); /*IE6-9*/
+  -webkit-filter: grayscale(100%); /*chrome- safari-*/
+
 }
 
-.photo-last-home{
+.photo-home:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+
+}
+
+/* @keyframes from_left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} */
+
+.photo-last-home {
   flex-grow: 10;
 }
 /*.photo-last-home è un <li> vuoto vhe aiuta l'impaginazione*/
 
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+	/* 50% {
+		background-position: 100% 50%;
+	} */
+	100% {
+		background-position: 100%;
+	}
+}
+
 @media (max-aspect-ratio: 1/1) {
-  .list-photos-results {
+  .list-photos-home {
     height: 30vh;
   }
 }
 /*Quando lo schermo viewport è più alto che largo*/
 
 @media (max-height: 550px) {
-  .list-photos-results {
+  .list-photos-home {
     height: 80vh;
   }
- 
-  
-
 }
 /*con piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
 
 @media (max-aspect-ratio: 1/1) and (max-width: 550px) {
-  .box-photos-results {
+  .box-photos-home {
     flex-direction: row;
   }
 
-  .list-photos-results {
+  .list-photos-home {
     height: auto;
     width: 100%;
   }
 
-  .photos-results {
+  .photo-home {
     width: 100%;
     max-height: 75vh;
     min-width: 0;
+    filter: none;
+  -webkit-filter: grayscale(0%);
   }
-  
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
 
 @media screen and (max-width: 700px) {
-  .verse{
-    font-size:15px;
-  }
-  .text{
+  .verse {
     font-size: 15px;
   }
-
- 
-
+  .text {
+    font-size: 15px;
+  }
 }
 
 /* @media screen and (max-width: 700px){

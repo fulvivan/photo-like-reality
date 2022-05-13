@@ -1,70 +1,48 @@
-/*  {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-.p-results{
+.p-results {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  padding: 10px 0 10px 0;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: 50%; */
   font-size: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
-.box-photos-results{
-  /* display: flex; */
+.box-photos-results {
   display: flex;
   flex-wrap: wrap;
-  margin: 15px;
-  /* flex-direction: row; */
-  /*row mette le foto in fila orizzontale*/
-  /*wrap manda a capo le immagini, altrimenti trasbordano dalla pagina*/
-  /* flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; */
-  /* flex-direction: column; */
-  /* padding: 10px; */
-  /* background-color: rgb(15, 14, 14); */
+  padding: 15px;
 }
 
-.list-photos-results{
-  /* display: flex; */
-  height: 40vh;
+.list-photos-results {
+  height: 50vh;
   flex-grow: 1;
-  margin: 17px;
-  /* height: 40vh; */
-  /* flex-grow: 1; */
-  /* list-style: none; */
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-style:double; */
-  /* background-color: rgb(17, 15, 15); */
-  /* margin: 10px;
-  border-width: 5px; */
-  /* border-color: #224b98b7;
-  padding: 10px; */
+  position: relative;
 }
 
 .photo-results {
   cursor: pointer;
-  /* padding: 10px; */
-  transition: all 0.5s ease-out;
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  padding: 1px;
-  
+  padding: 5px;
 }
 
-.photo-last-results{
-  flex-grow: 15;
+.photo-last-results {
+  flex-grow: 10;
 }
 /*.photo-last-results è un <li> vuoto vhe aiuta l'impaginazione*/
 
+.fav-button-results {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 @media (max-aspect-ratio: 1/1) {
   .list-photos-results {
     height: 30vh;
@@ -72,14 +50,14 @@
 }
 /*Quando lo schermo viewport è più alto che largo*/
 
-@media (max-widtht: 550px) {
+@media (max-widtht: 480px) {
   .list-photos-results {
     height: 80vh;
   }
 }
 /*con piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
 
-@media (max-aspect-ratio: 1/1) and (max-width: 550px) {
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
   .box-photos-results {
     flex-direction: row;
   }
@@ -91,34 +69,10 @@
 
   .photos-results {
     width: 100%;
-    /* max-height: 75vh; */
+    max-height: 75vh;
     min-width: 0;
   }
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
 
-.fav-button {
-  border-style: solid;
-  border-color: black;
-  border-radius: 5px;
-  /* border-width: 1px; */
-  margin: 5px;
-  /* padding: 5px; */
-  background-color: black;
-  font-size: 1rem;
-  cursor: pointer;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
- 
-
-
-
-
-/* .item {
-  margin: 0.5rem;
-}  */
 

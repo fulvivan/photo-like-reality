@@ -8,20 +8,18 @@
   background-color: #333; 
 } */
 
-.sliderPhotos {
+/* .sliderPhotos {
   position: relative;
   height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 10px; */
-  padding: 2px;
- 
-  /* background-color: rgb(183, 183, 183); */
-}
 
-.image {
+  padding: 2px;
+} */
+
+/* .image {
   height: auto;
   width: 45vw;
   overflow: hidden;
@@ -34,31 +32,26 @@
   border-color: rgb(18, 18, 18);
   padding: 3% 3% 14% 3%;
   background-color: rgb(213, 213, 213);
-}
+} */
 
-.right-arrow {
-  color: rgb(18,18,18) ;
-  /* width: 30px;
+/* .right-arrow {
+  color: rgb(18, 18, 18); */
+/* width: 30px;
   height: 30px; */
-  /* background-color: var(--bg-inverse);
+/* background-color: var(--bg-inverse);
   border-radius: 50%; */
 
-  cursor: pointer;
+/* cursor: pointer;
   bottom: 5%;
   right: 45%;
   position: absolute;
   text-align: center;
   line-height: 30px;
   display: inline-block;
-}
+} */
 
-.left-arrow {
-  color:  rgb(18,18,18);
-  /* width: 30px;
-  height: 30px; */
-  /* background-color: var(--bg-inverse);
-  border-radius: 50%; */
-
+/* .left-arrow {
+  color: rgb(18, 18, 18);
   cursor: pointer;
   bottom: 5%;
   left: 45%;
@@ -66,35 +59,30 @@
   text-align: center;
   line-height: 30px;
   display: inline-block;
-}
+} */
 
-.slide {
-  /* opacity: 0; */
-  transition: all 0.5s ease-in-out;
+/* .slide {
+  transition: all 1s ease-in-out;
 }
 
 .slide.active {
-  /* opacity: 1; */
-  transition-duration: 0.5s;
-  /* transform: scale(1.02); */
-}
-
+  transition-duration: 1s;
+} */
+/* 
 @media screen and (max-width: 700px) {
   .image {
-   
     width: 55vw;
   }
-  .left-arrow{
+  .left-arrow {
     bottom: 3%;
   }
-  .right-arrow{
+  .right-arrow {
     bottom: 3%;
   }
-}
+} */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .image {
-  
     width: 55vw;
   }
   .left-arrow {
@@ -105,7 +93,7 @@
     right: 40%;
     bottom: 1%;
   }
-}
+} */
 
 /* @media (max-width: 560px) {
   .left-arrow {
@@ -131,4 +119,3 @@
   width: 50vw;
 }
 } */
-

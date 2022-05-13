@@ -4,7 +4,6 @@ import AppContext from "./AppContext";
 import { retrieveFavItems, toggleFavItem } from "../logic";
 import "./Favs.css";
 import logger from "../utils/logger.js";
-// import './Favs.css'
 
 function Favs() {
   logger.debug("Favs -> render");
@@ -56,7 +55,7 @@ function Favs() {
           onFlowEnd();
           onModal("Login to see your favorite photos", "warn");
 
-          navigate('/')
+          navigate("/");
         } else {
           const favs = await retrieveFavItems(token);
 
@@ -72,57 +71,19 @@ function Favs() {
       }
     })();
   }, [token]);
-  console.log(items);
-  //   const [fav, setFav] = useState();
-  //   try {
-  //     onFlowStart();
-
-  //     const fav = await toggleFavItem(sessionStorage.token);
-
-  //     setFav(fav);
-
-  //     onFlowEnd();
-  //   }catch ({ message }) {
-  //     onFlowEnd();
-
-  //     onModal(message, "warn");
-  //   }
-  // }
-  // favsUseEffect();
-  //   }, [onFlowEnd, onFlowStart, onModal]);
 
   return (
-    <>
-      {/* <button
-        type="button"
-        className="button-back"
-        onClick={(event) => {
-          event.preventDefault();
-
-          navigate("/");
-        }}
-      >
-        Go back to home
-      </button> */}
-
+    <div className="gradient">
       {items && items.length ? (
         <ul className="box-photos-favs">
           {items.map(({ id, urls, isFav }) => (
-            <li
-              key={id}
-              className="list-photos-favs"
-             
-            >
-              {/* <h2>
-                {user.first_name} {user.last_name}
-              </h2> */}
-
+            <li key={id} className="list-photos-favs">
               <img
                 className="photo-favs "
                 title="detail"
-                src={urls.thumb}
+                src={urls.small}
                 alt=""
-                 onClick={() => goToItem(id)}
+                onClick={() => goToItem(id)}
               />
               <button
                 className="button-favs "
@@ -139,7 +100,7 @@ function Favs() {
           <li className="photo-last-favs"></li>
         </ul>
       ) : null}
-    </>
+    </div>
   );
 }
 

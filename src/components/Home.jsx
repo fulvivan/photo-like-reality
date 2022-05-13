@@ -1,38 +1,36 @@
 import "./Home.css";
-import ImageSlider from "./ImageSlider";
-import { SliderData } from "./SliderData";
+// import ImageSlider from "./ImageSlider";
+// import { SliderData } from "./SliderData";
 import logger from "../utils/logger";
+import Slider from "./Slider/Slider";
 
 function Home() {
   logger.debug("Home -> render");
 
   return (
-    <>
-      <div className="page-home">
-       
-
-        <ImageSlider slides={SliderData} />
-      </div>
-
-       <div className="container-verse">
-          <p className="verse">
-            "In photography there is a reality so subtle that it becomes more
-            real than reality"
-            <br /> -Alfred Stieglitz-
-          </p>
-        </div>
-
-      <div>
-        <p className="text">
-          Search for photos in the search bar.
-          <br /> Then click on the photo you like and you will be able to know
-          more details. <br />
-          Don't forget to save it in favorites!
-          <br />
-          <br />
-          Look photos I found with word 'Italy'.
+    <div className="gradient">
+      <div className="container-verse">
+        <p className="verse">
+          "In photography there is a reality so subtle that it becomes more real
+          than reality"
+          <br /> -Alfred Stieglitz-
         </p>
+
+        <Slider />
+
+        {/* <ImageSlider slides={SliderData} /> */}
       </div>
+
+      <p className="text">
+        Search for photos in the search bar.
+        <br /> Then click on the picture you like and you will be able to know
+        more details. <br />
+        Don't forget to save it in favorites!
+        <br />
+        <br />
+        Look the photos that I found when I searched the word 'Italy'.
+      </p>
+
       <ul className="box-photos-home">
         <li className="list-photos-home">
           <img
@@ -121,10 +119,10 @@ function Home() {
 
       <div>
         <p className="text-bottom">
-          Now you! Go to 'Search' and find your photos!
+          Now it's your turn! Go to 'Search' and find your photos!
         </p>
       </div>
-    </>
+    </div>
   );
 
   //       {/* <button onClick={onFlowStart}>start</button>

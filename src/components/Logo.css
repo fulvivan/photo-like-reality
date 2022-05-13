@@ -7,4 +7,5 @@
   margin:auto;
   filter: var( --logo );
   background: transparent;
+  cursor: pointer;
 }

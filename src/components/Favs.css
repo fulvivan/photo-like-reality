@@ -1,105 +1,68 @@
-/* .button-back {
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  margin: 10% 40%; */
-/*margin crea spazio intorno all'elemento. Si può impostare differente per ogni lato, o un numero solo uguale per ogni lato*/
-/* padding: 10px;
-  background-color: rgb(199, 198, 198);
-  font-size: 1rem;
-  cursor: pointer;
-  min-width: 5.5rem;
-} */
-
 .box-photos-favs {
   display: flex;
-  /* flex-direction: row; */
-  /*row mette le foto in fila orizzontale*/
   /*wrap manda a capo le immagini, altrimenti trasbordano dalla pagina*/
   flex-wrap: wrap;
-  margin: 15px;
-  /* justify-content: center;
-  align-items: center; */
-  /* flex-direction: column; */
-  /* padding: 10px; */
-  /* background: rgb(15, 14, 14); */
+  padding: 15px;
 }
 
 .list-photos-favs {
-  /* display: flex; */
-  height: 40vh;
+  height: 50vh;
   flex-grow: 1;
-  /* list-style: none; */
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-style: double; */
-  margin: 17px;
-  /* border-width: 5px; */
-
-  /*padding: 10px; */
+  position: relative;
+  /*Con position absolute del button favs permette di mettere il cuore sopra la foto*/
 }
 
 .photo-favs {
   cursor: pointer;
-  /* padding: 10px; */
-  transition: all 0.5s ease-out;
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  padding: 1px;
+  padding: 5px;
 }
 
-.photo-last-favs{
-  flex-grow: 15;
+.photo-last-favs {
+  flex-grow: 10;
 }
 /*.photo-last-favs è un <li> vuoto vhe aiuta l'impaginazione*/
 
+.button-favs {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 @media (max-aspect-ratio: 1/1) {
-  .list-photos-results {
+  .list-photos-favs {
     height: 30vh;
   }
 }
 /*Quando lo schermo viewport è più alto che largo*/
 
 @media (max-height: 480px) {
-  .list-photos-results {
+  .list-photos-favs {
     height: 80vh;
   }
 }
 /*on piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
 
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-  .box-photos-results {
+  .box-photos-favs {
     flex-direction: row;
   }
 
-  .list-photos-results {
+  .list-photos-favs {
     height: auto;
     width: 100%;
   }
 
-  .photos-results {
+  .photos-favs {
     width: 100%;
     max-height: 75vh;
     min-width: 0;
   }
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
-
-.button-favs {
-  /* border-radius: 5px;
-    border-style: solid;
-    border-width: 1px; */
-  margin: 5px;
-  /*margin crea spazio intorno all'elemento. Si può impostare differente per ogni lato, o un numero solo uguale per ogni lato*/
-  /* padding: 10px; */
-  /* background-color: rgb(199, 198, 198); */
-  font-size: 1rem;
-  cursor: pointer;
-  /* min-width: 5.5rem; */
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}

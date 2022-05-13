@@ -14,7 +14,7 @@
   padding-inline-end: 0;
   padding-inline-start: 0;
   cursor: default;
-  font-family: cursive;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   list-style-type: none;
   /*list-style-type toglie il puntino nero dagli elenchi, liste...*/
 }
@@ -40,12 +40,13 @@ body {
   --primary-color: rgb(45, 43, 62);
   --secondary-color: rgb(83, 99, 144);
   --font-color: rgb(18, 18, 18);
-  --bg-color: rgb(236, 236, 228);
+  --bg-color: rgb(250, 245, 234);
   --bg-color-nav: rgba(255, 254, 242, 0.904);
   --heading-color: rgb(41, 41, 34);
   --logo: brightness(0) saturate(100%) invert(8%) sepia(1%) saturate(1301%) hue-rotate(348deg) brightness(84%) contrast(99%); 
   --link-color: rgb(199, 5, 253);
   --bg-inverse: rgb(18, 18, 18);
+  --gradient: linear-gradient(-45deg, rgb(246, 217, 148),rgb(250, 245, 234),rgb(253, 231, 181),rgb(250, 245, 234),rgb(246, 217, 148) );
 }
 /*Per logo ho usato le proprietà di filter. E' abbastanza complesso, cercare su internet un generatore per filter properties. Ne ho uno in preferiti*/
 
@@ -54,12 +55,13 @@ body {
   --primary-color: rgb(247, 240, 167);
   --secondary-color: rgb(247, 240, 167);
   --font-color: rgb(238, 223, 49);
-  --bg-color:  rgb(18, 18, 18); ;
+  --bg-color:  rgb(0, 0, 0); 
   --bg-color-nav: rgba(18, 18, 18, 0.827);
   --heading-color: #818cab;
   --logo: brightness(0) saturate(100%) invert(90%) sepia(60%) saturate(373%) hue-rotate(326deg) brightness(105%) contrast(94%);
   --link-color: rgb(235, 188, 248);
   --bg-inverse:rgb(255, 254, 242);
+  --gradient:linear-gradient(45deg,  rgb(65, 37, 67), rgb(0, 0, 0), rgb(51, 28, 53), rgb(0,0,0), rgb(65, 37, 67) );
 }
 /* background-color: rgb(12, 12, 13);
 color: rgb(238, 223, 49); */
