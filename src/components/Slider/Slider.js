@@ -34,7 +34,7 @@ export default function Slider() {
             {dataSlider.map(({id}, index) => {
                 return (
                     <div
-                    key={index}
+                    key={id}
                     className={slideIndex === index ? "slide active-anim" : "slide"}
                     >
                         <img 
@@ -48,7 +48,7 @@ export default function Slider() {
 
             <div className="container-dots">
                 {Array.from(dataSlider).map((item, index) => (
-                    <div 
+                    <div key={index}
                     onClick={() => moveDot(index)}
                     className={slideIndex === index ? "dot active" : "dot"}
                     ></div>

@@ -82,6 +82,8 @@ border-width:1px;
     text-align: center;
   } */
 
+
+
   .theme {
     margin: 10px 40%;
     color: var(--primary-color);
@@ -163,6 +165,12 @@ border-width:1px;
     cursor: pointer;
   }
 }
+
+@media screen and (max-height:500px){
+    .navbar {
+  position: relative; 
+  } 
+} 
 
 .menu-icon{
   cursor: pointer;
