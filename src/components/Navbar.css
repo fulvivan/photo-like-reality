@@ -172,6 +172,12 @@ border-width:1px;
   } 
 } 
 
+@media screen and (max-width:480px){
+  .theme{
+    margin: 10px 30%;
+  }
+}
+
 .menu-icon{
   cursor: pointer;
 }
