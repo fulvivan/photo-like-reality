@@ -89,7 +89,7 @@ function Results() {
               <img
                 className="photo-results"
                 title="detail"
-                src={urls.small}
+                src={urls.thumb}
                 alt=""
                 onClick={() => goToItem(id)}
               />

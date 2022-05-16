@@ -10,13 +10,13 @@
 .box-photos-results {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .list-photos-results {
   height: 50vh;
   flex-grow: 1;
-  position: relative;
+  /* position: relative; */
 }
 
 .photo-results {
