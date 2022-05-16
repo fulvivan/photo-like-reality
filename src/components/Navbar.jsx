@@ -6,7 +6,6 @@ import "./Navbar.css";
 import ThemeSwitch from "./ThemeSwitch";
 
 function Navbar() {
-  // { onLogin, onProfile, onFavs, onSearch, onHome }
   logger.debug("Navbar -> render");
 
   const navigate = useNavigate();
@@ -65,7 +64,7 @@ function Navbar() {
           <ThemeSwitch />
         </div>
       </ul>
-      
+
       <button
         className="mobile-menu-icon "
         onClick={() => setIsMobile(!isMobile)}

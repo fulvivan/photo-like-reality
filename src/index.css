@@ -37,7 +37,7 @@ body {
 /*così non appare la horizontal scroll padding:0; margin:0; width:100%; */
 
 :root {
-  --primary-color: rgb(45, 43, 62);
+  --primary-color: rgb(18, 18, 18);
   --secondary-color: rgb(83, 99, 144);
   --font-color: rgb(18, 18, 18);
   --bg-color: rgb(250, 245, 234);

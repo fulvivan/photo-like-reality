@@ -18,6 +18,34 @@ function Favs() {
 
   const { token } = sessionStorage;
 
+  useEffect(() => {
+    (async () => {
+      logger.debug("Favs -> useEffect");
+
+      try {
+        onFlowStart();
+
+        if (!token) {
+          onFlowEnd();
+          onModal("Login to see your favorite photos", "warn");
+
+          navigate("/");
+        } else {
+          const favs = await retrieveFavItems(token);
+
+          console.log(favs);
+          setItems(favs);
+        }
+
+        onFlowEnd();
+      } catch ({ message }) {
+        onFlowEnd();
+
+        onModal(message, "warn");
+      }
+    })();
+  }, [token]);
+
   const toggleFav = async (item_id) => {
     try {
       onFlowStart();
@@ -45,32 +73,6 @@ function Favs() {
       onModal(message, "warn");
     }
   };
-
-  useEffect(() => {
-    (async () => {
-      logger.debug("Favs -> useEffect");
-      try {
-        onFlowStart();
-        if (!token) {
-          onFlowEnd();
-          onModal("Login to see your favorite photos", "warn");
-
-          navigate("/");
-        } else {
-          const favs = await retrieveFavItems(token);
-
-          console.log(favs);
-          setItems(favs);
-        }
-
-        onFlowEnd();
-      } catch ({ message }) {
-        onFlowEnd();
-
-        onModal(message, "warn");
-      }
-    })();
-  }, [token]);
 
   return (
     <div className="gradient">

@@ -23,7 +23,7 @@ export default function searchItems(token, query) {
       //Se entra qui vuol dire che il token c'è e controlla se non è valido legge la riga sotto, else riga 28.
       //Se il tokrn non c'è va fino alla riga 57.
       if (!response.ok) {
-        const { error } = response.json();
+        const { error } =await response.json();
 
         throw new Error(error);
       } else {

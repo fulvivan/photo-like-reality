@@ -127,9 +127,11 @@ function Home() {
     </div>
   );
 
-  //       {/* <button onClick={onFlowStart}>start</button>
-  //     <br />
-  //     <button onClick={onFlowEnd}>end</button> */}
+
+//    <button onClick={onFlowStart}>start</button>
+//        <br />
+//        <button onClick={onFlowEnd}>end</button> 
+      
   //       {/* buttom sopra era per testare lo spinner */}
 
   //       {/* <button onClick={()=> onModal ("jwt expired","error")}>Modal</button>

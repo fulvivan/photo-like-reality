@@ -31,6 +31,7 @@ function Results() {
         onFlowStart();
 
         const resultsContainer = await searchItems(token, query);
+
         console.log(resultsContainer);
 
         onFlowEnd();
@@ -51,8 +52,9 @@ function Results() {
   const toggleFav = async (item_id) => {
     try {
       onFlowStart();
-      const token = sessionStorage.token;
-      console.log(token);
+
+      // const token = sessionStorage.token;
+      // console.log(token);
 
       if (!token) {
         onModal("Login to add favorites to your profile", "warn");
@@ -68,9 +70,8 @@ function Results() {
             return item;
           })
         );
+        onFlowEnd();
       }
-
-      onFlowEnd();
     } catch ({ message }) {
       onFlowEnd();
 
@@ -80,7 +81,7 @@ function Results() {
 
   return (
     <div className="gradient">
-      <p className="p-results">Results for: {query}</p>
+      <p className="p-results">Results for: {query} </p>
       {items && items.length ? (
         <ul className="box-photos-results">
           {items.map(({ id, isFav, urls }) => (

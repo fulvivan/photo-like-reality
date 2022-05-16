@@ -51,6 +51,9 @@ function App() {
           onModal: showModal,
         }}
       >
+
+{spinner && <Spinner />}
+
         <Navbar />
 
         {modal && (
@@ -62,7 +65,7 @@ function App() {
           />
         )}
 
-        {spinner && <Spinner />}
+        
 
         {/* Nella versione di React6 è sostituito Switch con Routes */}
 
