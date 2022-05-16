@@ -68,14 +68,25 @@
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  padding: 1px;
+  padding: 0px;
   filter: grayscale(100%); /*IE6-9*/
   -webkit-filter: grayscale(100%); /*chrome- safari-*/
+
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  /* -moz-transition: all 0.2s; */
+  transform: scale(0.95);
+  
 }
 
 .photo-home:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
+
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  /* -moz-transform: scale(1.1); */
+  
 }
 
 .photo-last-home {
