@@ -69,7 +69,7 @@ function Detail() {
       {item && (
         <>
           <div className="">
-            <img className="detail-image" src={item.urls.thumb} alt="" />
+            <img className="detail-image" src={item.urls.small} alt="" />
 
             <ul className="list-detail">
               <li className="info-detail">
