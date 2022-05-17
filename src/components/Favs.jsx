@@ -85,12 +85,14 @@ function Favs() {
                 title="detail"
                 src={urls.small}
                 alt=""
-                onClick={() => goToItem(id)}
+                // onClick={() => goToItem(id)}
               />
 
-<div className="over-favs" onClick={() => goToItem(id)} >
-    <div className="more-favs"  >More</div>
-  </div>
+              <div className="over-favs" onClick={() => goToItem(id)}>
+                <div className="more-favs" onClick={() => goToItem(id)}>
+                  More
+                </div>
+              </div>
 
               <button
                 className="button-favs "

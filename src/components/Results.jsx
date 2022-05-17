@@ -91,12 +91,14 @@ function Results() {
                 title="detail"
                 src={urls.small}
                 alt=""
-                onClick={() => goToItem(id)}
+                // onClick={() => goToItem(id)}
               />
 
-<div className="over-results" onClick={() => goToItem(id)} >
-    <div className="more-results"  >More</div>
-  </div>
+              <div className="over-results" onClick={() => goToItem(id)}>
+                <div className="more-results" onClick={() => goToItem(id)}>
+                  More
+                </div>
+              </div>
 
               <button
                 className="fav-button-results"
