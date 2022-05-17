@@ -83,7 +83,7 @@ function Favs() {
               <img
                 className="photo-favs "
                 title="detail"
-                src={urls.thumb}
+                src={urls.small}
                 alt=""
                 onClick={() => goToItem(id)}
               />

@@ -2,20 +2,20 @@
   display: flex;
   /*wrap manda a capo le immagini, altrimenti trasbordano dalla pagina*/
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .list-photos-favs {
-  height: 50vh;
+  height: 40vh;
   flex-grow: 1;
   position: relative;
-  /*Con position absolute del button favs permette di mettere il cuore sopra la foto*/
+  /*Position relative con position absolute del button favs permette di mettere il cuore sopra la foto*/
 }
 
 .photo-favs {
   cursor: pointer;
-  max-height: 100%;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   vertical-align: bottom;
   padding: 5px;
@@ -57,6 +57,7 @@
   .list-photos-favs {
     height: auto;
     width: 100%;
+    overflow: hidden;
   }
 
   .photos-favs {

@@ -1,3 +1,14 @@
+.container-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 50%;
+  color: var(--font-color);
+  font-weight: bold;
+  height: 101vh;
+  width: auto;
+}
+
 .detail-image {
   padding: 0px 0 0 0;
   display: flex;
@@ -23,16 +34,7 @@
   width: fit-content;
 }
 
-.container-detail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 50%;
-  color: var(--font-color);
-  font-weight: bold;
-  height: 100vh;
-  width: auto;
-}
+
 
 .info-detail {
   margin: 5px;

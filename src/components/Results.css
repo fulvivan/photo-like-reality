@@ -14,15 +14,16 @@
 }
 
 .list-photos-results {
-  height: 50vh;
+  height: 40vh;
   flex-grow: 1;
-  /* position: relative; */
+  position: relative;
 }
+ /*Position relative con position absolute del button favs permette di mettere il cuore sopra la foto*/
 
 .photo-results {
   cursor: pointer;
-  max-height: 100%;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   vertical-align: bottom;
   padding: 5px;
@@ -48,7 +49,7 @@
 }
 /*Quando lo schermo viewport è più alto che largo*/
 
-@media (max-widtht: 480px) {
+@media (max-height: 480px) {
   .list-photos-results {
     height: 80vh;
   }
@@ -63,12 +64,14 @@
   .list-photos-results {
     height: auto;
     width: 100%;
+    overflow: hidden;
   }
 
   .photos-results {
     width: 100%;
     max-height: 75vh;
     min-width: 0;
+    /* overflow: hidden; */
   }
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/

@@ -113,14 +113,14 @@
 }
 /*Quando lo schermo viewport è più alto che largo*/
 
-@media (max-height: 550px) {
+@media (max-height: 480px) {
   .list-photos-home {
     height: 80vh;
   }
 }
 /*con piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
 
-@media (max-aspect-ratio: 1/1) and (max-width: 550px) {
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
   .box-photos-home {
     flex-direction: row;
   }
