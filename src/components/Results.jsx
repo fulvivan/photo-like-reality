@@ -93,6 +93,11 @@ function Results() {
                 alt=""
                 onClick={() => goToItem(id)}
               />
+
+<div className="over-results" onClick={() => goToItem(id)} >
+    <div className="more-results"  >More</div>
+  </div>
+
               <button
                 className="fav-button-results"
                 onClick={(event) => {
