@@ -1,3 +1,5 @@
+
+
 .p-results {
   display: block;
   padding: 10px 0 10px 0;
@@ -14,7 +16,7 @@
 }
 
 .list-photos-results {
-  height: 40vh;
+  height: 50vh;
   flex-grow: 1;
   position: relative;
 }
@@ -79,6 +81,29 @@
 }
 
  /*Position absolute con position relative di list-photos permette di mettere il cuore sopra la foto*/
+
+ .load-more-button{
+   padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  cursor: pointer;
+ }
+
+ .box-load {
+  display: block;
+  padding: 10px 0 20px 0;
+  text-align: center;
+}
+
+.p-load {
+  display: block;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight:lighter;
+  text-transform:capitalize;
+}
 
 @media (max-aspect-ratio: 1/1) {
   .list-photos-results {

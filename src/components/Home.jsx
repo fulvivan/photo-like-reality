@@ -18,12 +18,12 @@ function Home() {
       </div>
 
       <p className="text">
-        Search for photos in the search bar.
+        {/* Search for photos in the search bar.
         <br /> Then click on the picture you like and you will be able to know
         more details. <br />
         Don't forget to save it in favorites!
         <br />
-        <br />
+        <br /> */}
         Look the photos that I found when I searched the word 'Italy'.
       </p>
 

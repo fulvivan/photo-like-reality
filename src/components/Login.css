@@ -1,5 +1,5 @@
 .background-login {
-  background-image: url('https://images.unsplash.com/photo-1460467820054-c87ab43e9b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+  background-image: var(--gradient);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -18,28 +18,40 @@
     padding: 1rem;
     background-color: transparent;
   }
+
+  .box-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--gradient);
+    border-style: solid;
+    border-width: thin;
+  }
   
   .field-login {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border-style: solid;
     border-width: 1px;
+    width: 90%;
     margin: 5px;
     padding: 10px;
-    background-color: rgba(227, 245, 214, 0.678);
+    background-color: var(--gradient);
     font-size: 1rem;
     cursor: text;
   }
   
   .button-login {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border-style: solid;
     border-width: 1px;
     margin: 5px;
     padding: 10px;
     font-size: 1rem;
     cursor: pointer;
-    min-width: 5.5rem;
-    background-color: rgba(103, 147, 70, 0.825);
+    width: 90%;
+    background-color: var(--gradient);
   }
   
   .button-login:hover {

@@ -7,7 +7,7 @@ import { validateToken, validateQuery } from "./helpers/validators";
  *
  * @throws {TypeError} When any of the arguments does not match the correct type.
  */
-export default function searchItems(token, query) {
+export default function searchItems(token, query, page=1) {
   if (token) validateToken(token);
 
   validateQuery(query);
@@ -32,7 +32,7 @@ export default function searchItems(token, query) {
         const { favs = [] } = user;
 
         const res2 = await fetch(
-          `${context.API_PHOTOS}/search/photos?query=${query}&per_page=20&client_id=${context.CLIENT_ID}`,
+          `${context.API_PHOTOS}/search/photos?query=${query}&page=${page}&per_page=20&client_id=${context.CLIENT_ID}`,
           {
             method: "GET",
             Authorization: `${context.CLIENT_ID}`,
@@ -59,7 +59,7 @@ export default function searchItems(token, query) {
       //Else sotto è un'altra funzione che viene letta se il token che viene chiesto sopra non c'è. Quindi restituisce le foto senza la memoria del fav.
     } else {
       const res2 = await fetch(
-        `${context.API_PHOTOS}/search/photos?query=${query}&per_page=20&client_id=${context.CLIENT_ID}`,
+        `${context.API_PHOTOS}/search/photos?query=${query}&page=${page}&per_page=20&client_id=${context.CLIENT_ID}`,
         {
           method: "GET",
           Authorization: `Client-ID ${context.CLIENT_ID}`,

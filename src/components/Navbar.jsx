@@ -28,6 +28,7 @@ function Navbar() {
     <nav className="navbar gradient">
       <div className="logo-nav" onClick={() => navigate("/")}>
         <Logo />
+        {/* <Search/> */}
       </div>
       <ul
         className={isMobile ? "nav-links-mobile gradient" : "nav-links"}

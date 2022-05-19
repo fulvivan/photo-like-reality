@@ -33,7 +33,7 @@ function Login() {
   };
 
   return (
-    <div className="background-login">
+    <div className="background-login gradient">
       <form
         className="container-login"
         onSubmit={(event) => {
@@ -49,27 +49,29 @@ function Login() {
           login(username, password);
         }}
       >
-        <input
-          className="field-login "
-          type="text"
-          name="username"
-          id="login-username"
-          placeholder="Username"
-          required
-        />
-        <input
-          className="field-login"
-          type="password"
-          name="password"
-          id="login-password"
-          placeholder="Password"
-          required
-        />
+        <div className="box-login">
+          <input
+            className="field-login "
+            type="text"
+            name="username"
+            id="login-username"
+            placeholder="Username"
+            required
+          />
+          <input
+            className="field-login"
+            type="password"
+            name="password"
+            id="login-password"
+            placeholder="Password"
+            required
+          />
 
-        <div className="container-login">
           <button type="submit" className="button-login">
             Login
           </button>
+
+          <p>New to Photos?</p>
         </div>
       </form>
     </div>

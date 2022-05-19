@@ -5,18 +5,18 @@
   right: 50%;
   color: var(--font-color);
   font-weight: bold;
-  height: 101vh;
+  height: 100%;
   width: auto;
 }
 
 .detail-image {
-  padding: 0px 0 0 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2%;
-  margin: 35px 5px 5px 5px;
-  max-width: 300px;
+  margin: 25% 5px 5px 5px;
+  /* max-width: 300px; */
   height: auto;
 }
 

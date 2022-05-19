@@ -16,12 +16,18 @@ function Results() {
   const goToItem = (id) => navigate(`/search/items/item?id=${id}`);
 
   const [items, setItems] = useState([]);
+  const [page, setPage] = useState(1);
+  const [pages, setPages] = useState();
 
   const queryParams = useQueryParams();
 
   const query = queryParams.get("query");
 
   const { token } = sessionStorage;
+
+  const loadMoreItems = () => {
+    setPage(page + 1);
+  };
 
   useEffect(() => {
     (async () => {
@@ -30,7 +36,7 @@ function Results() {
       try {
         onFlowStart();
 
-        const resultsContainer = await searchItems(token, query);
+        const resultsContainer = await searchItems(token, query, page);
 
         console.log(resultsContainer);
 
@@ -39,15 +45,20 @@ function Results() {
         const photos = resultsContainer.results;
         console.log(photos);
 
-        setItems(photos);
+        const totalPages = resultsContainer.total_pages;
+        // console.log(totalPages);
+
+        setPages(totalPages);
+        setItems([...items, ...photos]);
       } catch ({ message }) {
         onFlowEnd();
 
         onModal(message, "warn");
       }
     })();
-  }, [query]);
-  console.log(items);
+  }, [query, page]);
+  // console.log(page);
+  // console.log(pages);
 
   const toggleFav = async (item_id) => {
     try {
@@ -78,10 +89,12 @@ function Results() {
       onModal(message, "warn");
     }
   };
+  // console.log(items);
 
   return (
     <div className="gradient">
       <p className="p-results">Results for: {query} </p>
+
       {items && items.length ? (
         <ul className="box-photos-results">
           {items.map(({ id, isFav, urls }) => (
@@ -115,6 +128,16 @@ function Results() {
           <li className="photo-last-results"></li>
         </ul>
       ) : null}
+
+      <div className="box-load">
+        {page < pages ? (
+          <button className="load-more-button" onClick={loadMoreItems}>
+            Load more
+          </button>
+        ) : (
+          <p className="p-load">No more pictures for: {query}</p>
+        )}
+      </div>
     </div>
   );
 }

@@ -51,8 +51,7 @@ function App() {
           onModal: showModal,
         }}
       >
-
-{spinner && <Spinner />}
+        {spinner && <Spinner />}
 
         <Navbar />
 
@@ -64,8 +63,6 @@ function App() {
             onReset={resetToken}
           />
         )}
-
-        
 
         {/* Nella versione di React6 è sostituito Switch con Routes */}
 

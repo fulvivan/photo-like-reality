@@ -6,7 +6,7 @@
 }
 
 .list-photos-favs {
-  height: 40vh;
+  height: 50vh;
   flex-grow: 1;
   position: relative;
   /*Position relative con position absolute del button favs permette di mettere il cuore sopra la foto*/
