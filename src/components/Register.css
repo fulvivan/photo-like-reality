@@ -17,17 +17,40 @@
   flex-direction: column;
   padding: 1rem;
   background-color: transparent;
+  
+}
+
+.box-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color:transparent;
+  /* border-style: solid;
+  border-radius: 5px;
+  border-width: thin; */
+  margin: 50px 0 0 0;
+  padding: 30px 10px 30px 10px;
 }
 
 .field-register {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
   background-color: rgba(68, 17, 16, 0.844);
   font-size: 1rem;
   cursor: text;
+}
+
+#register-password,
+#register-email,
+#register-username,
+#register-name{
+  border-color: black;
+  color: rgb(213, 214, 209);
 }
 
 .button-register {
@@ -36,7 +59,6 @@
   border-width: 1px;
   margin: 5px;
   padding: 10px;
-  background-color: transparent;
   font-size: 1rem;
   cursor: pointer;
   min-width: 5.5rem;

@@ -11,11 +11,34 @@
   transition: all 0.5s ease-out;
 }
 
+.container-unregister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.box-unregister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color:transparent;
+  /* border-style: solid;
+  border-radius: 5px;
+  border-width: thin; */
+  margin: 50px 0 0 0;
+  padding: 30px 10px 30px 10px;
+}
+
 .field-unregister {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
   background-color: rgba(252, 239, 221, 0.758);
   font-size: 1rem;
@@ -28,21 +51,13 @@
   border-width: 1px;
   margin: 5px;
   padding: 10px;
-  background-color: transparent;
   font-size: 1rem;
   cursor: pointer;
   min-width: 5.5rem;
   background-color: rgba(247, 201, 138, 0.568);
 }
 
-.container-unregister {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
-  background-color: transparent;
-}
+
 
 .button-unregister:hover {
   background-color: rgba(247, 202, 138, 0.959);

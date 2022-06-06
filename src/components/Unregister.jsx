@@ -36,45 +36,49 @@ function Unregister() {
 
   return (
     <section className="background-unregister">
-       <div className="container-unregister">
-      <form
-        className="container-unregister"
-        onSubmit={(event) => {
-          event.preventDefault();
+      <div className="container-unregister">
+        <form
+          className="container-unregister"
+          onSubmit={(event) => {
+            event.preventDefault();
 
-          const password = event.target.password.value;
+            const password = event.target.password.value;
 
-          unregister(password);
-        }}
-      >
-        <input
-          className="field-unregister"
-          type="password"
-          name="password"
-          id="unregister-password"
-          placeholder="Password"
-        />
+            unregister(password);
+          }}
+        >
 
-        <div className="container-unregister">
-          <button type="submit" className="button-unregister button--dark">
-            Unregister
-          </button>
-          <button
-            type="button"
-            className="button-unregister"
-            onClick={(event) => {
-              event.preventDefault();
+          <div className="box-unregister">
+              <input
+            className="field-unregister"
+            type="password"
+            name="password"
+            id="unregister-password"
+            placeholder="Password"
+          />
 
-              navigate("/profile");
-            }}
-          >
-            Go Back To Profile
-          </button>
-        </div>
-      </form>
-    </div>
+          <div className="container-unregister">
+            <button type="submit" className="button-unregister button--dark">
+              Unregister
+            </button>
+            <button
+              type="button"
+              className="button-unregister"
+              onClick={(event) => {
+                event.preventDefault();
+
+                navigate("/profile");
+              }}
+            >
+              Go Back To Profile
+            </button>
+</div>
+
+        
+          </div>
+        </form>
+      </div>
     </section>
-   
   );
 }
 

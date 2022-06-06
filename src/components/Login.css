@@ -1,5 +1,5 @@
 .background-login {
-  background-image: var(--gradient);
+  background-image: url("https://images.unsplash.com/photo-1460467820054-c87ab43e9b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1067&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -25,25 +25,39 @@
     align-items: center;
     flex-direction: column;
     padding: 1rem;
-    background-color: var(--gradient);
-    border-style: solid;
-    border-width: thin;
+    background-color: transparent;
+    /* border-style: solid;
+    border-radius: 5px;
+    border-width: thin; */
+    margin: 50px 0 0 0;
+    padding: 30px 10px 30px 10px;
   }
   
   .field-login {
-    /* border-radius: 5px; */
+    border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    width: 90%;
-    margin: 5px;
+    /* width: 90%; */
+    margin: 10px;
     padding: 10px;
-    background-color: var(--gradient);
+    background-color: rgba(65, 65, 3, 0.908);
     font-size: 1rem;
     cursor: text;
   }
+
+  /* input{
+   border-color: black;
+   color: rgb(213, 214, 209);
+  } */
+
+  #login-password,
+  #login-username{
+    border-color: black;
+    color: rgb(213, 214, 209);
+  }
   
   .button-login {
-    /* border-radius: 5px; */
+    border-radius: 5px;
     border-style: solid;
     border-width: 1px;
     margin: 5px;
@@ -51,9 +65,9 @@
     font-size: 1rem;
     cursor: pointer;
     width: 90%;
-    background-color: var(--gradient);
+    background-color: rgba(108, 108, 3, 0.961);
   }
   
   .button-login:hover {
-    background-color: rgba(103, 147, 70);
+    background-color: rgba(135, 135, 4, 0.935);
   }

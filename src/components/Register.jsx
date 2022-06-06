@@ -49,43 +49,45 @@ function Register() {
           register(name, username, email, password);
         }}
       >
-        <input
-          className="field-register"
-          type="text"
-          name="name"
-          id="register-name"
-          placeholder="Name"
-          required
-        />
-        <input
-          className="field-register"
-          type="text"
-          name="username"
-          id="register-username"
-          placeholder="Username"
-          required
-        />
-        <input
-          className="field-register"
-          type="email"
-          name="email"
-          id="register-email"
-          placeholder="Email"
-          required
-        />
-        <input
-          className="field-register"
-          type="password"
-          name="password"
-          id="register-password"
-          placeholder="Password"
-          required
-        />
+        <div className="box-register">
+          <input
+            className="field-register"
+            type="text"
+            name="name"
+            id="register-name"
+            placeholder="Name"
+            required
+          />
+          <input
+            className="field-register"
+            type="text"
+            name="username"
+            id="register-username"
+            placeholder="Username"
+            required
+          />
+          <input
+            className="field-register"
+            type="email"
+            name="email"
+            id="register-email"
+            placeholder="Email"
+            required
+          />
+          <input
+            className="field-register"
+            type="password"
+            name="password"
+            id="register-password"
+            placeholder="Password"
+            required
+          />
 
-        <div className="container-register">
-          <button type="submit" className="button-register">
-            Register
-          </button>
+          <div className="container-register">
+            <button type="submit" className="button-register">
+              Register
+            </button>
+          </div>
         </div>
       </form>
     </div>

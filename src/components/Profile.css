@@ -18,14 +18,27 @@
     padding: 1rem;
     background-color: transparent;
   }
+
+  .box-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color:transparent;
+    /* border-style: solid;
+    border-radius: 5px;
+    border-width: thin; */
+    margin: 50px 0 0 0;
+    padding: 30px 10px 30px 10px;
+  }
   
   .button-profile {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    margin: 5px;
+    margin: 10px;
     padding: 10px;
-    background-color: transparent;
     font-size: 1rem;
     cursor: pointer;
     min-width: 5.5rem;

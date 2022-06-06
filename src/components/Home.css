@@ -138,7 +138,7 @@
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
 
-@media (pointer:none) {
+@media (hover:none) {
   .photo-home {
     filter: none;
     -webkit-filter: grayscale(0%);
