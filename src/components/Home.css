@@ -49,7 +49,7 @@
   font-size: 25px;
   line-height: 1.6;
   color: var(--primary-color);
-  font-weight:lighter;
+  font-weight: lighter;
 }
 
 .box-photos-home {
@@ -76,7 +76,6 @@
   -webkit-transition: all 0.2s;
   /* -moz-transition: all 0.2s; */
   transform: scale(0.95);
-  
 }
 
 .photo-home:hover {
@@ -86,7 +85,6 @@
   transform: scale(1);
   -webkit-transform: scale(1);
   /* -moz-transform: scale(1.1); */
-  
 }
 
 .photo-last-home {
@@ -134,11 +132,18 @@
     width: 100%;
     max-height: 75vh;
     min-width: 0;
+    /* filter: none;
+    -webkit-filter: grayscale(0%); */
+  }
+}
+/*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
+
+@media (pointer:none) {
+  .photo-home {
     filter: none;
     -webkit-filter: grayscale(0%);
   }
 }
-/*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
 
 @media screen and (max-width: 700px) {
   .verse {
