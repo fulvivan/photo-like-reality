@@ -87,13 +87,6 @@ function Favs() {
                 alt=""
                 // onClick={() => goToItem(id)}
               />
-
-              <div className="over-favs" onClick={() => goToItem(id)}>
-                <div className="more-favs" onClick={() => goToItem(id)}>
-                  More
-                </div>
-              </div>
-
               <button
                 className="button-favs "
                 onClick={(event) => {
@@ -104,6 +97,11 @@ function Favs() {
               >
                 {isFav ? "🧡" : "🤍"}
               </button>
+              <div className="over-favs" onClick={() => goToItem(id)}>
+                <div className="more-favs" onClick={() => goToItem(id)}>
+                  More
+                </div>
+              </div>
             </li>
           ))}
           <li className="photo-last-favs"></li>
