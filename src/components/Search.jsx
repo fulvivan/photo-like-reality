@@ -15,7 +15,6 @@ function Search() {
     setQuery(query);
 
     navigate(`/search/items?query=${query}`);
-    
   };
 
   return (
@@ -32,17 +31,19 @@ function Search() {
             search(query);
           }}
         >
-          <input
-            className="field-search"
-            type="text"
-            placeholder="Search photos"
-            name="query"
-            defaultValue={query}
-          />
-          <button
-            type="submit"
-            className="button-search fa-solid fa-magnifying-glass"
-          />
+          <div className="box-search">
+            <input
+              className="field-search"
+              type="text"
+              placeholder="Search photos"
+              name="query"
+              defaultValue={query}
+            />
+            <button
+              type="submit"
+              className="button-search fa-solid fa-magnifying-glass"
+            />
+          </div>
         </form>
       </section>
     </>

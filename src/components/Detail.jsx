@@ -72,39 +72,59 @@ function Detail() {
             <img className="detail-image" src={item.urls.small} alt="" />
 
             <ul className="list-detail">
-              <li className="info-detail">
-                <span>
+              <li className="li-detail">
+                <span className="info-detail1">{item.description}</span>
+              </li>
+
+              <li className="li-detail">
+                <span className="info-detail">
                   {item.user.first_name} {item.user.last_name}
                 </span>
               </li>
 
-              <li className="info-detail">
-                <span>{item.user.location}</span>
+              <li className="li-detail">
+                <span className="info-detail">{item.location.city}</span>
               </li>
-              <li className="info-detail">
-                <p>Description: "{item.alt_description}"</p>
-              </li>
-              <li className="info-detail">
-                <span>
+
+              <li className="li-detail">
+                <span className="info-detail">
                   📷: {item.exif.make} - {item.exif.model}
                 </span>
               </li>
 
-              <div className="info-detail card-body">
-                <a href={item.urls.full} className="card">
-                  Click here to see the picture bigger
-                </a>
-              </div>
+              <li className="card-body">
+                <span className="li-detail info-detail">
+                  Click
+                  <a href={item.urls.full} className="card">
+                    here
+                  </a>
+                  to see the picture bigger
+                </span>
+              </li>
 
-              <div className="info-detail">
+              <li className="card-body ">
+                <span
+                  href={item.links.html}
+                  className="info-detail card1 fa-regular fa-user"
+                ></span>
+                <a href={item.links.html} className="card">
+                  Profile
+                </a>
+              </li>
+
+              <li className="li-detail">
+                <span className="info-detail">Downloads: {item.downloads}</span>
+              </li>
+
+              <li className="info-detail">
                 Save in Favs
                 <button
-                  className=" fav-detail"
+                  className="fav-detail"
                   onClick={() => toggleFav(item.id)}
                 >
                   {item.isFav ? "🧡" : "🤍"}
                 </button>
-              </div>
+              </li >
               <button
                 type="button"
                 className="button-detail "

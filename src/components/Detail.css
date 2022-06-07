@@ -4,7 +4,7 @@
   align-items: center;
   right: 50%;
   color: var(--font-color);
-  font-weight: bold;
+  font-weight:bold;
   height: 100%;
   width: auto;
 }
@@ -21,7 +21,11 @@
 }
 
 .list-detail {
-  margin: 10px;
+  margin: 20px 0px;
+}
+
+.li-detail {
+  margin:10px 0px
 }
 
 .card-body {
@@ -30,21 +34,40 @@
 
 .card {
   cursor: pointer;
-  color: var(--link-color);
-  width: fit-content;
+  color: var(--secondary-color);
+  /* width: fit-content; */
+  margin: 4px;
+  border-style: none none solid none;
+border-width: thin;
+font-weight: lighter;
 }
 
+.card1 {
+  cursor: pointer;
+  color: var(--secondary-color);
+  /* width: fit-content; */
+  /* margin: 4px; */
+  /* border-style: none none solid none; */
+border-width: thin;
+font-weight: lighter;
+}
 
 
 .info-detail {
   margin: 5px;
+  /* text-transform:initial; */
+}
+
+.info-detail1 {
+  margin: 5px;
+  text-transform:capitalize;
 }
 
 .button-detail {
   border-radius: 2px;
   border-style: solid;
   border-width: 1px;
-  margin: 15px 15px 15px 0px;
+  margin: 15px 15px 35px 0px;
   padding: 1px;
   font-size: 13px;
   cursor: pointer;

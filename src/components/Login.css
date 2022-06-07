@@ -45,11 +45,6 @@
     cursor: text;
   }
 
-  /* input{
-   border-color: black;
-   color: rgb(213, 214, 209);
-  } */
-
   #login-password,
   #login-username{
     border-color: black;
@@ -64,7 +59,8 @@
     padding: 10px;
     font-size: 1rem;
     cursor: pointer;
-    width: 90%;
+    min-width: 5.5rem;
+    /* width: 90%; */
     background-color: rgba(108, 108, 3, 0.961);
   }
   

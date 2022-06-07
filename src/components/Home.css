@@ -27,7 +27,7 @@
   flex-direction: column;
   padding: 2rem;
   font-size: 19px;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   line-height: 1.6;
   color: var(--primary-color);
