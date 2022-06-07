@@ -18,4 +18,4 @@ For support, email fulvivan@gmail.com .
 
 ## Demo
 
-https://photos-like-reality.onrender.com
+https://photo-like-reality.onrender.com
