@@ -68,7 +68,7 @@ function Detail() {
     <div className="container-detail gradient">
       {item && (
         <>
-          <div className="container-list-detail">
+          <div className="">
             <img className="detail-image" src={item.urls.small} alt="" />
 
             <ul className="list-detail">

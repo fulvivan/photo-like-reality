@@ -10,9 +10,9 @@
  
 }
 
-.container-list-detail{
+/* .container-list-detail{
   margin:10% 20% ;
-}
+} */
 
 .detail-image {
   padding: 0;
@@ -20,18 +20,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 2%;
-  /* margin: 20%; */
-  
-  /* margin: 15% 0px 0px 0px; */
+  margin: 25% 5px 5px 5px;
   /* max-width: 300px; */
   height: auto;
 }
 
 .list-detail {
-  margin: 40px 0 0 0;
-  justify-content: center;
-  /* margin-right: 20%;
-  margin-left: 20%; */
+  margin: 20px 0px;
 
 }
 
