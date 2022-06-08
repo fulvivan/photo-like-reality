@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import logger from "../utils/logger";
 import "./Search.css";
 
+
 function Search() {
   logger.debug("Search -> render");
 
@@ -19,6 +20,7 @@ function Search() {
 
   return (
     <>
+     
       <section className="background-search">
         <div></div>
         <form

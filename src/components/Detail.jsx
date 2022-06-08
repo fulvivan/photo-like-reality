@@ -27,7 +27,7 @@ function Detail() {
       console.log(token);
 
       if (!token) {
-        onModal("Login to add favorites to your profile", "warn");
+        onModal("Log in to add favorites to your profile", "warn");
       } else {
         await toggleFavItem(token, item_id);
 

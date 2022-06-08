@@ -68,7 +68,9 @@ function Results() {
       // console.log(token);
 
       if (!token) {
-        onModal("Login to add favorites to your profile", "warn");
+         onFlowEnd();
+        onModal("Log in to add favorites to your profile", "warn");
+       
       } else {
         await toggleFavItem(token, item_id);
 
