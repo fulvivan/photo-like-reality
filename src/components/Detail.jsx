@@ -68,72 +68,65 @@ function Detail() {
     <div className="container-detail gradient">
       {item && (
         <>
-          <div className="">
-            <img className="detail-image" src={item.urls.small} alt="" />
+          <ul className="">
 
-            <ul className="list-detail">
-              <li className="li-detail">
-                <span className="info-detail">"{item.description}"</span>
-              </li>
+            <li className="li-detail">
+              <img className="detail-image" src={item.urls.small} alt="" />
+            </li>
 
-              <li className="li-detail">
-                <span className="info-detail">
-                  {item.user.first_name} {item.user.last_name}
-                </span>
-              </li>
+            <li className="li-detail">
+              <span className="info-detail">
+                {item.user.first_name} {item.user.last_name}
+              </span>
+            </li>
 
-              <li className="li-detail">
-                <span className="info-detail">🗺️: {item.location.city}</span>
-              </li>
+            <li className="li-detail">
+              <span className="info-detail">🗺️: {item.location.city}</span>
+            </li>
 
-              <li className="li-detail">
-                <span className="info-detail">
-                  📷: {item.exif.make} - {item.exif.model}
-                </span>
-              </li>
+            <li className="li-detail">
+              <span className="info-detail">
+                📷: {item.exif.make} - {item.exif.model}
+              </span>
+            </li>
 
-              <li className="card-body">
-                <span className="li-detail info-detail">
-                  Click
-                  <a href={item.urls.full} className="card">
-                    here
-                  </a>
-                  to see the picture bigger
-                </span>
-              </li>
-
-              <li className="card-body ">
-                <span
-                  href={item.links.html}
-                  className="info-detail card1 fa-regular fa-user"
-                ></span>
-                <a href={item.links.html} className="card">
-                  Profile
-                </a>
-              </li>
-
-              <li className="li-detail">
-                <span className="info-detail">Downloads: {item.downloads}</span>
-              </li>
-
-              <li className="info-detail">
-                Save in Favs
-                <button
-                  className="fav-detail"
-                  onClick={() => toggleFav(item.id)}
-                >
-                  {item.isFav ? "🧡" : "🤍"}
-                </button>
-              </li >
-              <button
-                type="button"
-                className="button-detail "
-                onClick={() => navigate(-1)}
-              >
-                Go back
+            <li className="info-detail">
+              Save in Favs
+              <button className="fav-detail" onClick={() => toggleFav(item.id)}>
+                {item.isFav ? "🧡" : "🤍"}
               </button>
-            </ul>
-          </div>
+            </li>
+
+            <li className="info-detail">
+              <span className="li-detail ">
+                Click
+                <a href={item.urls.full} className="card">
+                  here
+                </a>
+                to see the picture bigger
+              </span>
+            </li>
+
+            <li className="info-detail">
+              <span
+                href={item.links.html}
+                className=" card1 fa-regular fa-user"
+              ></span>
+              <a href={item.links.html} className="card">
+                Profile
+              </a>
+            </li>
+
+            <button
+              type="button"
+              className="button-detail "
+              onClick={() => navigate(-1)}
+            >
+              Go back
+            </button>
+
+          </ul>
+
         </>
       )}
     </div>
