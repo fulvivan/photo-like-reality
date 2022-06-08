@@ -68,12 +68,12 @@ function Detail() {
     <div className="container-detail gradient">
       {item && (
         <>
-          <div className="">
+          <div className="container-list-detail">
             <img className="detail-image" src={item.urls.small} alt="" />
 
             <ul className="list-detail">
               <li className="li-detail">
-                <span className="info-detail1">{item.description}</span>
+                <span className="info-detail">"{item.description}"</span>
               </li>
 
               <li className="li-detail">
@@ -83,7 +83,7 @@ function Detail() {
               </li>
 
               <li className="li-detail">
-                <span className="info-detail">{item.location.city}</span>
+                <span className="info-detail">🗺️: {item.location.city}</span>
               </li>
 
               <li className="li-detail">
