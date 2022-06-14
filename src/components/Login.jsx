@@ -3,6 +3,7 @@ import { useContext } from "react";
 import AppContext from "./AppContext";
 import { loginUser } from "../logic";
 import { useNavigate } from "react-router-dom";
+import ImgLogin from "../Images/ImgLogin.jpg";
 import "./Login.css";
 
 function Login() {
@@ -33,7 +34,7 @@ function Login() {
   };
 
   return (
-    <div className="background-login">
+    <div className="background-login gradient">
       <form
         className="container-login"
         onSubmit={(event) => {
@@ -49,21 +50,26 @@ function Login() {
           login(username, password);
         }}
       >
+
+       <h1 className="h1-login">Login</h1>
+
         <div className="box-login">
+          <label htmlFor="login-username">Username</label>
           <input
             className="field-login "
             type="text"
             name="username"
             id="login-username"
-            placeholder="Username"
+            placeholder=""
             required
           />
+           <label htmlFor="login-password">Password</label>
           <input
             className="field-login"
             type="password"
             name="password"
             id="login-password"
-            placeholder="Password"
+            placeholder=""
             required
           />
 
@@ -71,9 +77,22 @@ function Login() {
             Login
           </button>
 
-          {/* <p>New to Photos?</p> */}
+          <span className="p-login">New to Photos?
+          <button  className="join" onClick={() => navigate("/register")}> Join</button>
+          </span>
+         
+          
+ <img className="img-login" src={ImgLogin} alt="" />
+
+    {/* <div>
+         
+
+         
+</div> */}
+
         </div>
       </form>
+   
     </div>
   );
 }

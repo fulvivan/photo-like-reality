@@ -1,5 +1,6 @@
 import logger from "../utils/logger";
 import { useNavigate } from "react-router-dom";
+import ImgProfile from "../Images/ImgProfile.jpg";
 import "./Profile.css";
 
 function Profile({ onReset }) {
@@ -13,7 +14,7 @@ function Profile({ onReset }) {
 
   return (
     <>
-      <section className="background-profile">
+      <section className="background-profile gradient">
         <div className="container-profile" id="profile">
           <div className="box-profile">
             <button
@@ -26,7 +27,7 @@ function Profile({ onReset }) {
 
             <button
               type="button"
-              className="button-profile button-warning"
+              className="button-profile"
               onClick={goToUnregister}
             >
               Unregister
@@ -35,6 +36,12 @@ function Profile({ onReset }) {
             <button type="button" className="button-profile" onClick={onReset}>
               Sign out
             </button>
+
+             <img className="img-profile" src={ImgProfile} alt="" />
+
+            {/* <div>
+         
+</div> */}
           </div>
         </div>
       </section>

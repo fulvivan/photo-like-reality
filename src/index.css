@@ -61,7 +61,7 @@ body {
   --heading-color: #818cab;
   --logo: brightness(0) saturate(100%) invert(90%) sepia(60%) saturate(373%) hue-rotate(326deg) brightness(105%) contrast(94%);
   --link-color: rgb(235, 188, 248);
-  --bg-inverse:rgb(255, 254, 242);
+  --bg-inverse:rgb(247, 240, 167);
   --gradient:linear-gradient(45deg,  rgb(65, 37, 67), rgb(0, 0, 0), rgb(51, 28, 53), rgb(0,0,0), rgb(65, 37, 67) );
 }
 /* background-color: rgb(12, 12, 13);
@@ -69,7 +69,7 @@ color: rgb(238, 223, 49); */
 
 body {
   background-color: var(--bg-color);
-  color: var(--font-color);
+  color: var(--primary-color);
 }
 
 

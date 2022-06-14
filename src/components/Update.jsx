@@ -3,6 +3,7 @@ import { modifyUser } from "../logic";
 import AppContext from "./AppContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import ImgUpdate from "../Images/ImgUpdate.jpg"
 import "./Update.css";
 
 function Update() {
@@ -33,7 +34,7 @@ function Update() {
   };
 
   return (
-    <section className="background-update">
+    <section className="background-update gradient">
       <form
         className="container-update"
         onSubmit={(event) => {
@@ -41,10 +42,10 @@ function Update() {
 
           const {
             target: {
-              newName: { value: newName },
-              newUserName: { value: newUserName },
-              newEmail: { value: newEmail },
               password: { value: password },
+              newName: { value: newName },
+              newUsername: { value: newUsername },
+              newEmail: { value: newEmail },
               newPassword: { value: newPassword },
             },
           } = event;
@@ -52,7 +53,7 @@ function Update() {
           const data = {
             password,
             newName,
-            newUserName,
+            newUsername,
             newEmail,
             newPassword,
           };
@@ -67,48 +68,60 @@ function Update() {
         }}
       >
         <div className="box-update">
+
+        <label htmlFor="update-password">Enter Old Password</label>
+          <input
+            className="field-update"
+            type="password"
+            name="password"
+            id="update-password"
+            placeholder=""
+            required
+          />
+
+          <label htmlFor="update-newName">New Name</label>
           <input
             className="field-update"
             type="text"
             name="newName"
             id="update-newName"
-            placeholder="New Name"
+            placeholder=""
           />
+
+          <label htmlFor="update-newUsername">New Username</label>
           <input
             className="field-update"
             type="text"
             name="newUsername"
             id="update-newUsername"
-            placeholder="New Username"
+            placeholder=""
           />
+
+          <label htmlFor="update-newEmail">Enter New Email</label>
           <input
             className="field-update"
             type="email"
             name="newEmail"
-            id="register-email"
-            placeholder="New Email"
+            id="update-newEmail"
+            placeholder=""
           />
+
+          <label htmlFor="update-newPassword">Enter New Password</label>
           <input
             className="field-update"
             type="password"
             name="newPassword"
-            id="register-newPassword"
-            placeholder="New Password"
-          />
-          <input
-            className="field-update"
-            type="password"
-            name="password"
-            id="register-password"
-            placeholder="Password"
-            required
+            id="update-newPassword"
+            placeholder=""
           />
 
-          <div className="container-update">
-            <button type="submit" className="button-update button--dark">
+        
+
+           <button type="submit" className="button-update button--dark">
               Update
-            </button>
-            <button
+          </button>
+          
+           <button
               type="button"
               className="button-update"
               onClick={(event) => {
@@ -118,8 +131,18 @@ function Update() {
               }}
             >
               Go Back To Profile
-            </button>
-          </div>
+          </button>
+          
+ <img className="img-update" src={ImgUpdate} alt="" />
+
+          {/* <div>
+         
+</div>
+
+          <div className="container-update">
+           
+           
+          </div> */}
         </div>
       </form>
     </section>

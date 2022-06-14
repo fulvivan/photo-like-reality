@@ -10,7 +10,7 @@
   position:sticky;
   top: 0;
   align-items: center;
-  height: 75px;
+  height: 13vh;
   border-width: 1px;
   color: var(--font-color);
   z-index: 100;
@@ -27,6 +27,7 @@
 .theme {
   margin: 10px 5px 5px 5px;
   color: var(--primary-color);
+  font-size: 15px;
   /* font-weight: bold; */
 }
 
@@ -62,6 +63,7 @@
     margin: 10px 40%;
     color: var(--primary-color);
     text-align: center;
+    font-size: 15px;
     /* font-weight: bold; */
   }
 
@@ -80,7 +82,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    top: 75px;
+    top: 13vh;
     transition: all 0.5s ease-out;
     /*così non appare horizontal scroll padding:0; margin:0; width:90%;*/
     /* z-index: 1; */
@@ -110,13 +112,13 @@
   .mobile-menu-icon {
     display: block;
     position: absolute;
-    font-size: 20px;
+    font-size: 4vh;
     color: var(--primary-color);
     background-color: transparent;
     border: none;
     outline: none;
-    top: 20px;
-    right: 25px;
+    top: 4vh;
+    right: 4vh;
     cursor: pointer;
   }
 }

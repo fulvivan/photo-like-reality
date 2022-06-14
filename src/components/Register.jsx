@@ -3,6 +3,7 @@ import { useContext } from "react";
 import AppContext from "./AppContext";
 import { registerUser } from "../logic";
 import { useNavigate } from "react-router-dom";
+import ImgRegister from "../Images/ImgRegister.jpg";
 import "./Register.css";
 
 function Register() {
@@ -20,7 +21,7 @@ function Register() {
 
       onFlowEnd();
 
-      onModal("Benvenut@! Adesso puoi fare il login.", "success");
+      onModal("Welcome! Now you can log in", "success");
 
       navigate("/login");
     } catch ({ message }) {
@@ -31,7 +32,7 @@ function Register() {
   };
 
   return (
-    <div className="background-register">
+    <div className="background-register gradient">
       <form
         className="container-register"
         onSubmit={(event) => {
@@ -50,44 +51,55 @@ function Register() {
         }}
       >
         <div className="box-register">
+          <label htmlFor="register-name">Enter Name</label>
           <input
             className="field-register"
             type="text"
             name="name"
             id="register-name"
-            placeholder="Name"
+            placeholder=""
             required
           />
+
+          <label htmlFor="register-username">Enter Username</label>
           <input
             className="field-register"
             type="text"
             name="username"
             id="register-username"
-            placeholder="Username"
+            placeholder=""
             required
           />
+
+          <label htmlFor="register-email">Enter Email</label>
           <input
             className="field-register"
             type="email"
             name="email"
             id="register-email"
-            placeholder="Email"
+            placeholder=""
             required
           />
+
+          <label htmlFor="register-password">Enter Password</label>
           <input
             className="field-register"
             type="password"
             name="password"
             id="register-password"
-            placeholder="Password"
+            placeholder=""
             required
           />
 
-          <div className="container-register">
-            <button type="submit" className="button-register">
-              Register
-            </button>
-          </div>
+          <button type="submit" className="button-register">
+            Register
+          </button>
+
+          <img className="img-register" src={ImgRegister} alt="login" />
+
+          {/* <div>
+         
+</div> */}
         </div>
       </form>
     </div>

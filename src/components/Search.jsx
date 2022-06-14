@@ -2,6 +2,7 @@ import { useState } from "react";
 import useQueryParams from "../hooks/use-query-params";
 import { useNavigate } from "react-router-dom";
 import logger from "../utils/logger";
+import ImgSearch from "../Images/ImgSearch.jpg"
 import "./Search.css";
 
 
@@ -19,10 +20,10 @@ function Search() {
   };
 
   return (
-    <>
+    
      
-      <section className="background-search">
-        <div></div>
+      <section className="background-search gradient">
+        {/* <div></div> */}
         <form
           className="container-search"
           onSubmit={(event) => {
@@ -44,11 +45,14 @@ function Search() {
             <button
               type="submit"
               className="button-search fa-solid fa-magnifying-glass"
-            />
+          />
+          
+          <img className="img-search" src={ImgSearch} alt="" />
+
           </div>
         </form>
       </section>
-    </>
+    
   );
 }
 

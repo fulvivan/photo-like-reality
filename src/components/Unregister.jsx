@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { unregisterUser } from "../logic";
 import AppContext from "./AppContext";
 import { useNavigate } from "react-router-dom";
+import ImgUnregister from "../Images/ImgUnregister.jpg"
 import "./Unregister.css";
 
 function Unregister() {
@@ -35,7 +36,7 @@ function Unregister() {
   };
 
   return (
-    <section className="background-unregister">
+    <section className="background-unregister gradient">
       <div className="container-unregister">
         <form
           className="container-unregister"
@@ -49,18 +50,21 @@ function Unregister() {
         >
 
           <div className="box-unregister">
+
+            <label htmlFor="unregister-password">Enter Password</label>
               <input
             className="field-unregister"
             type="password"
             name="password"
             id="unregister-password"
-            placeholder="Password"
+              placeholder=""
+              required
           />
 
-          <div className="container-unregister">
-            <button type="submit" className="button-unregister button--dark">
+             <button type="submit" className="button-unregister button--dark">
               Unregister
             </button>
+
             <button
               type="button"
               className="button-unregister"
@@ -72,8 +76,12 @@ function Unregister() {
             >
               Go Back To Profile
             </button>
-</div>
 
+          {/* <div className="container-unregister">
+           
+            
+</div> */}
+ <img className="img-unregister" src={ImgUnregister} alt="" />
         
           </div>
         </form>

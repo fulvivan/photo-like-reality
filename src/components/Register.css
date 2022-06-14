@@ -1,13 +1,23 @@
 .background-register {
-  background-image: url("https://images.unsplash.com/photo-1487577701484-5ba48d7e6f4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  /* background-image: url("https://images.unsplash.com/photo-1487577701484-5ba48d7e6f4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   min-height: 100%;
-  height:100vh;
+  height:100%;
   z-index: -1;
-  transition: all 0.5s ease-out;
+  /* transition: all 0.5s ease-out; */
+  background-color: var(--gradient);
+}
+
+.img-register{
+  max-width: 280px;
+  border-style: solid;
+  margin: 10px 2px 2px;
+  border-width: thin;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 3px var(--bg-inverse); */
 }
 
 .container-register {
@@ -24,13 +34,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 300px;
   padding: 1rem;
-  background-color:transparent;
-  /* border-style: solid;
+  /* background-color:transparent; */
+  border-style: solid;
   border-radius: 5px;
-  border-width: thin; */
-  margin: 50px 0 0 0;
-  padding: 30px 10px 30px 10px;
+  border-width: thin;
+  background-color: var(--gradient);
+  margin: 10vh 0 5vh 0;
+  /* padding: 10vh 0 5vh 0; */
 }
 
 .field-register {
@@ -39,18 +51,20 @@
   border-width: 1px;
   margin: 10px;
   padding: 10px;
-  background-color: rgba(68, 17, 16, 0.844);
+  box-shadow: 0px 0px 3px var(--bg-inverse);
+  /* background-color: rgba(68, 17, 16, 0.844); */
   font-size: 1rem;
   cursor: text;
+  color: var(--primary-color);
 }
 
-#register-password,
+/* #register-password,
 #register-email,
 #register-username,
 #register-name{
-  border-color: black;
-  color: rgb(213, 214, 209);
-}
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+} */
 
 .button-register {
   border-radius: 5px;
@@ -61,9 +75,11 @@
   font-size: 1rem;
   cursor: pointer;
   min-width: 5.5rem;
-  background-color: rgba(251, 144, 142, 0.538);
+  /* background-color: rgba(251, 144, 142, 0.538); */
+  box-shadow: 0px 0px 3px var(--bg-inverse);
+  color: var(--primary-color);
 }
 
-.button-register:hover {
+/* .button-register:hover {
   background-color: rgba(251, 144, 142, 0.986);
-}
+} */
