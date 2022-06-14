@@ -3,6 +3,9 @@
   /*wrap manda a capo le immagini, altrimenti trasbordano dalla pagina*/
   flex-wrap: wrap;
   padding: 0 15px;
+  /* height: 100vh; */
+  min-height: 100vh;
+  height: 100%;
 }
 
 .list-photos-favs {

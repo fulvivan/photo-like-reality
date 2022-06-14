@@ -42,6 +42,7 @@ function Favs() {
         onFlowEnd();
 
         onModal(message, "warn");
+        navigate("/");
       }
     })();
   }, [token]);

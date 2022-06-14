@@ -59,6 +59,7 @@ export default function retrieveFavItems(token) {
        return items
          
       } else throw new Error('No favorites found in your profile')
+      
     } 
   })();
 }
