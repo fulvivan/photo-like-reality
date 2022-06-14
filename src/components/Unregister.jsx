@@ -51,7 +51,7 @@ function Unregister() {
 
           <div className="box-unregister">
 
-            <label htmlFor="unregister-password">Enter Password</label>
+            <label htmlFor="unregister-password">Password</label>
               <input
             className="field-unregister"
             type="password"

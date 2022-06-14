@@ -51,7 +51,7 @@ function Register() {
         }}
       >
         <div className="box-register">
-          <label htmlFor="register-name">Enter Name</label>
+          <label htmlFor="register-name">Name</label>
           <input
             className="field-register"
             type="text"
@@ -61,7 +61,7 @@ function Register() {
             required
           />
 
-          <label htmlFor="register-username">Enter Username</label>
+          <label htmlFor="register-username">Username</label>
           <input
             className="field-register"
             type="text"
@@ -71,7 +71,7 @@ function Register() {
             required
           />
 
-          <label htmlFor="register-email">Enter Email</label>
+          <label htmlFor="register-email">Email</label>
           <input
             className="field-register"
             type="email"
@@ -81,7 +81,7 @@ function Register() {
             required
           />
 
-          <label htmlFor="register-password">Enter Password</label>
+          <label htmlFor="register-password">Password</label>
           <input
             className="field-register"
             type="password"

@@ -69,7 +69,7 @@ function Update() {
       >
         <div className="box-update">
 
-        <label htmlFor="update-password">Enter Old Password</label>
+        <label htmlFor="update-password">Old Password</label>
           <input
             className="field-update"
             type="password"
@@ -97,7 +97,7 @@ function Update() {
             placeholder=""
           />
 
-          <label htmlFor="update-newEmail">Enter New Email</label>
+          <label htmlFor="update-newEmail">New Email</label>
           <input
             className="field-update"
             type="email"
@@ -106,7 +106,7 @@ function Update() {
             placeholder=""
           />
 
-          <label htmlFor="update-newPassword">Enter New Password</label>
+          <label htmlFor="update-newPassword">New Password</label>
           <input
             className="field-update"
             type="password"
