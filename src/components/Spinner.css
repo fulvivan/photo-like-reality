@@ -2,9 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
-  /* height: 100%; */
-  background-color:rgba(102, 101, 101, 0.8);
+  background-color: rgba(102, 101, 101, 0.8);
   backdrop-filter: blur(0px);
   /*il colore sopra sbiadisce la pagina sotto spinner*/
   position: fixed;
@@ -17,10 +15,6 @@
 
 .spinner {
   justify-content: center;
-  color:var(--font-color);
+  color: var(--font-color);
   background-color: transparent;
 }
-
-/* .container--full {
-    height: 100%;
-  } */

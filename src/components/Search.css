@@ -1,18 +1,11 @@
 .background-search {
-  /* background-image: url("https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: cover;
-  background-position: center; */
   min-height: 100vh;
   height: 100%;
-  /* position: relative; */
   z-index: -1;
-  /* transition: all 0.5s ease-out; */
   background-color: var(--gradient);
 }
 
-.img-search{
+.img-search {
   max-width: 280px;
   border-style: solid;
   margin: 10px 2px 2px;
@@ -40,7 +33,6 @@
   border-radius: 5px;
   border-width: thin;
   margin: 15vh 0 5vh 0;
-  /* padding: 30px 10px 30px 10px; */
 }
 
 .field-search {
@@ -50,7 +42,6 @@
   margin: 10px;
   padding: 10px;
   box-shadow: 0px 0px 3px var(--bg-inverse);
-  /* background-color: rgba(213, 194, 164, 0.851); */
   font-size: 1rem;
   cursor: text;
   color: var(--primary-color);
@@ -67,9 +58,4 @@
   cursor: pointer;
   min-width: 5.5rem;
   color: var(--primary-color);
-  /* background-color: rgba(186, 141, 70, 0.748); */
 }
-
-/* .button-search:hover {
-  background-color: rgba(245, 181, 77, 0.934);
-} */

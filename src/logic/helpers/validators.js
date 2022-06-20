@@ -10,12 +10,6 @@ function validateName(name) {
   if (name.trim() !== name) throw new Error("blank spaces around name");
 }
 
-// function validateItemId(item_id) {
-//   if (typeof item_id !== 'string') throw new TypeError('item_id is not a string')
-//   if (!item_id.trim().length) throw new Error('item_id is empty or blank')
-//   if (/\r?\n|\r|\t| /g.test(item_id)) throw new Error('item_id has blank spaces')
-// }
-
 function validateUsername(username) {
   if (typeof username !== "string")
     throw new TypeError("username is not a string");
@@ -114,7 +108,6 @@ module.exports = {
   validateEmail,
   validatePassword,
   validateNewPassword,
-  // validateItemId,
   validateToken,
   validateData,
   validateCallback,

@@ -7,7 +7,7 @@ import { validateToken, validateQuery } from "./helpers/validators";
  *
  * @throws {TypeError} When any of the arguments does not match the correct type.
  */
-export default function searchItems(token, query, page=1) {
+export default function searchItems(token, query, page = 1) {
   if (token) validateToken(token);
 
   validateQuery(query);
@@ -23,7 +23,7 @@ export default function searchItems(token, query, page=1) {
       //Se entra qui vuol dire che il token c'è e controlla se non è valido legge la riga sotto, else riga 28.
       //Se il tokrn non c'è va fino alla riga 57.
       if (!response.ok) {
-        const { error } =await response.json();
+        const { error } = await response.json();
 
         throw new Error(error);
       } else {

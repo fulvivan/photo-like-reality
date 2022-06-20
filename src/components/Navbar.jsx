@@ -45,11 +45,6 @@ function Navbar() {
           <li className="favs">Favs</li>
         </Link>
         <>
-          {/* {view === "loggedOut" && (
-            <Link to="/register" className="">
-              <li className="register">Register</li>
-            </Link>
-          )} */}
           {view === "loggedOut" && (
             <Link to="/login" className="">
               <li className="login">Login</li>

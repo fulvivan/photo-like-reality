@@ -3,7 +3,6 @@
   /*wrap manda a capo le immagini, altrimenti trasbordano dalla pagina*/
   flex-wrap: wrap;
   padding: 0 15px;
-  /* height: 100vh; */
   min-height: 100vh;
   height: 100%;
 }
@@ -19,8 +18,6 @@
   opacity: 1;
   z-index: 0;
 }
-
-/*z-index:1 altrimenti il cuore di favs rimane sopra*/
 
 .photo-favs {
   cursor: pointer;
@@ -40,7 +37,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: var(--bg-more);
   cursor: pointer;
 }
@@ -56,7 +53,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   cursor: pointer;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .photo-last-favs {
@@ -73,7 +70,21 @@
   cursor: pointer;
 }
 
-  /*Position absolute con position relative di list-photos permette di mettere il cuore sopra la foto*/
+/*Position absolute con position relative di list-photos permette di mettere il cuore sopra la foto*/
+
+.button-goBack-favs {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 35px 15px 15px 20px;
+  padding: 1px;
+  font-size: 13px;
+  cursor: pointer;
+  min-width: 5.5rem;
+  width: 3px;
+  color: var(--font-color);
+  font-weight: bold;
+}
 
 @media (max-aspect-ratio: 1/1) {
   .list-photos-favs {

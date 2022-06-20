@@ -41,9 +41,6 @@ export default function retrieveItem(token, id) {
           }
         );
 
-        // const { status } = response2;
-        // sopra sta destrutturando un oggetto e prende una proprietà, status, e la assegna e una costante.
-
         if (response2.ok) {
           const item = await response2.json();
 
@@ -67,7 +64,7 @@ export default function retrieveItem(token, id) {
 
       if (response.ok) {
         const item = await response.json();
-      
+
         console.log(item);
 
         return item;

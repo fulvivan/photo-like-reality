@@ -37,11 +37,7 @@ function Profile({ onReset }) {
               Sign out
             </button>
 
-             <img className="img-profile" src={ImgProfile} alt="" />
-
-            {/* <div>
-         
-</div> */}
+            <img className="img-profile" src={ImgProfile} alt="" />
           </div>
         </div>
       </section>

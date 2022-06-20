@@ -1,52 +1,54 @@
-import { useState, useEffect } from 'react'
-import logger from '../utils/logger'
-import './ThemeSwitch.css'
+import { useState, useEffect } from "react";
+import logger from "../utils/logger";
+import "./ThemeSwitch.css";
 
 function ThemeSwitch() {
-    logger.debug('ToggleSwitch -> render')
+  logger.debug("ToggleSwitch -> render");
 
-    const [switched, setSwitched] = useState(false)
+  const [switched, setSwitched] = useState(false);
 
-    // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]')
+  useEffect(() => {
+    const currentTheme = localStorage.getItem("theme")
+      ? localStorage.getItem("theme")
+      : null;
 
-    useEffect(() => {
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
-    
-        if (currentTheme) {
-            if (currentTheme === 'dark')
-                setSwitched(true)
-        }
-    }, [switched])
-
-
-    const switchTheme = (event) => {
-        if (event.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark')
-
-            localStorage.setItem('theme', 'dark')
-
-            setSwitched(true)
-        } else {
-            document.documentElement.setAttribute('data-theme', 'light')
-
-            localStorage.setItem('theme', 'light')
-
-            setSwitched(false)
-        }    
+    if (currentTheme) {
+      if (currentTheme === "dark") setSwitched(true);
     }
+  }, [switched]);
 
-    // toggleSwitch.addEventListener('change', switchTheme, false);
+  const switchTheme = (event) => {
+    if (event.target.checked) {
+      document.documentElement.setAttribute("data-theme", "dark");
 
-    return <>
-        <div className="theme-switch-wrapper">
-            <label className="theme-switch" htmlFor="checkbox">
-                <input type="checkbox" id="checkbox" checked={switched ? true : false} onChange={switchTheme} />
-                <div className="slider round">
-                </div>
-            </label>
-            <p>Theme</p>
-        </div>
+      localStorage.setItem("theme", "dark");
+
+      setSwitched(true);
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+
+      localStorage.setItem("theme", "light");
+
+      setSwitched(false);
+    }
+  };
+
+  return (
+    <>
+      <div className="theme-switch-wrapper">
+        <label className="theme-switch" htmlFor="checkbox">
+          <input
+            type="checkbox"
+            id="checkbox"
+            checked={switched ? true : false}
+            onChange={switchTheme}
+          />
+          <div className="slider round"></div>
+        </label>
+        <p>Theme</p>
+      </div>
     </>
+  );
 }
 
-export default ThemeSwitch
+export default ThemeSwitch;

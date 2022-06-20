@@ -18,12 +18,6 @@ function Home() {
       </div>
 
       <p className="text">
-        {/* Search for photos in the search bar.
-        <br /> Then click on the picture you like and you will be able to know
-        more details. <br />
-        Don't forget to save it in favorites!
-        <br />
-        <br /> */}
         Look the photos that I found when I searched the word 'Italy'.
       </p>
 
@@ -126,16 +120,6 @@ function Home() {
       </div>
     </div>
   );
-
-
-//    <button onClick={onFlowStart}>start</button>
-//        <br />
-//        <button onClick={onFlowEnd}>end</button> 
-      
-  //       {/* buttom sopra era per testare lo spinner */}
-
-  //       {/* <button onClick={()=> onModal ("jwt expired","error")}>Modal</button>
-  //}
 }
 
 export default Home;

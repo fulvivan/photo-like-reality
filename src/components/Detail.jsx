@@ -69,7 +69,6 @@ function Detail() {
       {item && (
         <>
           <ul className="">
-
             <li className="li-detail">
               <img className="detail-image" src={item.urls.small} alt="" />
             </li>
@@ -124,9 +123,7 @@ function Detail() {
             >
               Go back
             </button>
-
           </ul>
-
         </>
       )}
     </div>

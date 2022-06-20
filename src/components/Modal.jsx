@@ -14,7 +14,6 @@ function Modal({ level, message, onAccept, onReset }) {
     <>
       <div className="modal">
         <div className="modal-panel">
-          {/* <h1 className='modal__title'>Error</h1> */}
           <p className={className}>
             {message === "jwt expired" ? "session expired" : message}
           </p>

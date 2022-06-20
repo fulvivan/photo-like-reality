@@ -3,7 +3,7 @@ const dataSlider = [
     id: "PhotosLikeReality",
   },
   {
-id: 'Ladybug',
+    id: "Ladybug",
   },
   {
     id: "LagoBries",

@@ -34,10 +34,8 @@ export default function toggleFavItem(token, id) {
 
       const index = favs.indexOf(id);
 
-      if (index < 0)
-        favs.push(id);
-      else
-        favs.splice(index, 1);
+      if (index < 0) favs.push(id);
+      else favs.splice(index, 1);
 
       favorites = favs;
     }
@@ -52,9 +50,7 @@ export default function toggleFavItem(token, id) {
     });
 
     if (response2.ok) {
-      // const { token } = await response.json();
       return;
-      // token;
     } else {
       const { error } = await response2.json();
       throw new Error(error);

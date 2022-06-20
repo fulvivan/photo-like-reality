@@ -46,7 +46,6 @@ function Results() {
         console.log(photos);
 
         const totalPages = resultsContainer.total_pages;
-        // console.log(totalPages);
 
         setPages(totalPages);
         setItems([...items, ...photos]);
@@ -57,20 +56,14 @@ function Results() {
       }
     })();
   }, [query, page]);
-  // console.log(page);
-  // console.log(pages);
 
   const toggleFav = async (item_id) => {
     try {
       onFlowStart();
 
-      // const token = sessionStorage.token;
-      // console.log(token);
-
       if (!token) {
-         onFlowEnd();
+        onFlowEnd();
         onModal("Log in to add favorites to your profile", "warn");
-       
       } else {
         await toggleFavItem(token, item_id);
 
@@ -91,7 +84,6 @@ function Results() {
       onModal(message, "warn");
     }
   };
-  // console.log(items);
 
   return (
     <div className="gradient">
@@ -106,7 +98,6 @@ function Results() {
                 title="detail"
                 src={urls.small}
                 alt=""
-                // onClick={() => goToItem(id)}
               />
 
               <div className="over-results" onClick={() => goToItem(id)}>

@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { unregisterUser } from "../logic";
 import AppContext from "./AppContext";
 import { useNavigate } from "react-router-dom";
-import ImgUnregister from "../Images/ImgUnregister.jpg"
+import ImgUnregister from "../Images/ImgUnregister.jpg";
 import "./Unregister.css";
 
-function Unregister() {
+function Unregister({ onReset }) {
   logger.debug("Unregister -> render");
 
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function Unregister() {
 
       onModal("User unregistered", "success");
 
-      navigate("/");
+      onReset();
     } catch ({ message }) {
       onFlowEnd();
 
@@ -48,20 +48,18 @@ function Unregister() {
             unregister(password);
           }}
         >
-
           <div className="box-unregister">
-
             <label htmlFor="unregister-password">Password</label>
-              <input
-            className="field-unregister"
-            type="password"
-            name="password"
-            id="unregister-password"
+            <input
+              className="field-unregister"
+              type="password"
+              name="password"
+              id="unregister-password"
               placeholder=""
               required
-          />
+            />
 
-             <button type="submit" className="button-unregister button--dark">
+            <button type="submit" className="button-unregister button--dark">
               Unregister
             </button>
 
@@ -77,12 +75,7 @@ function Unregister() {
               Go Back To Profile
             </button>
 
-          {/* <div className="container-unregister">
-           
-            
-</div> */}
- <img className="img-unregister" src={ImgUnregister} alt="" />
-        
+            <img className="img-unregister" src={ImgUnregister} alt="" />
           </div>
         </form>
       </div>

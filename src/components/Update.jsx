@@ -3,7 +3,7 @@ import { modifyUser } from "../logic";
 import AppContext from "./AppContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import ImgUpdate from "../Images/ImgUpdate.jpg"
+import ImgUpdate from "../Images/ImgUpdate.jpg";
 import "./Update.css";
 
 function Update() {
@@ -68,8 +68,7 @@ function Update() {
         }}
       >
         <div className="box-update">
-
-        <label htmlFor="update-password">Old Password</label>
+          <label htmlFor="update-password">Old Password</label>
           <input
             className="field-update"
             type="password"
@@ -115,34 +114,23 @@ function Update() {
             placeholder=""
           />
 
-        
-
-           <button type="submit" className="button-update button--dark">
-              Update
+          <button type="submit" className="button-update button--dark">
+            Update
           </button>
-          
-           <button
-              type="button"
-              className="button-update"
-              onClick={(event) => {
-                event.preventDefault();
 
-                navigate("/profile");
-              }}
-            >
-              Go Back To Profile
+          <button
+            type="button"
+            className="button-update"
+            onClick={(event) => {
+              event.preventDefault();
+
+              navigate("/profile");
+            }}
+          >
+            Go Back To Profile
           </button>
-          
- <img className="img-update" src={ImgUpdate} alt="" />
 
-          {/* <div>
-         
-</div>
-
-          <div className="container-update">
-           
-           
-          </div> */}
+          <img className="img-update" src={ImgUpdate} alt="" />
         </div>
       </form>
     </section>

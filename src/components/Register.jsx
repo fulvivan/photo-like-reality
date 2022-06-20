@@ -96,10 +96,6 @@ function Register() {
           </button>
 
           <img className="img-register" src={ImgRegister} alt="login" />
-
-          {/* <div>
-         
-</div> */}
         </div>
       </form>
     </div>

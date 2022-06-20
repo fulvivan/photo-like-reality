@@ -1,6 +1,5 @@
 import registerUser from "./register-user";
 import loginUser from "./login-user";
-import retrieveUser from "./retrieve-user";
 import modifyUser from "./modify-user";
 import unregisterUser from "./unregister-user";
 import retrieveItem from "./retrieve-item";
@@ -11,7 +10,6 @@ import searchItems from "./search-items";
 export {
   loginUser,
   registerUser,
-  retrieveUser,
   modifyUser,
   unregisterUser,
   retrieveItem,

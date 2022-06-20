@@ -77,6 +77,13 @@ function Favs() {
 
   return (
     <div className="gradient">
+      <button
+        type="button"
+        className="button-goBack-favs "
+        onClick={() => navigate(-1)}
+      >
+        Go back
+      </button>
       {items && items.length ? (
         <ul className="box-photos-favs">
           {items.map(({ id, urls, isFav }) => (

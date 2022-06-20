@@ -50,8 +50,7 @@ function Login() {
           login(username, password);
         }}
       >
-
-       <h1 className="h1-login">Login</h1>
+        <h1 className="h1-login">Login</h1>
 
         <div className="box-login">
           <label htmlFor="login-username">Username</label>
@@ -63,7 +62,7 @@ function Login() {
             placeholder=""
             required
           />
-           <label htmlFor="login-password">Password</label>
+          <label htmlFor="login-password">Password</label>
           <input
             className="field-login"
             type="password"
@@ -77,22 +76,20 @@ function Login() {
             Login
           </button>
 
-          <span className="p-login">New to Photos?
-          <button  className="join" onClick={() => navigate("/register")}> Join</button>
+          <span className="p-login">
+            New to Photos?
+            <button
+              className="join"
+              type="button"
+              onClick={() => navigate("/register")}
+            >
+              Join
+            </button>
           </span>
-         
-          
- <img className="img-login" src={ImgLogin} alt="" />
 
-    {/* <div>
-         
-
-         
-</div> */}
-
+          <img className="img-login" src={ImgLogin} alt="" />
         </div>
       </form>
-   
     </div>
   );
 }
