@@ -3,7 +3,7 @@ import { useContext } from "react";
 import AppContext from "./AppContext";
 import { loginUser } from "../logic";
 import { useNavigate } from "react-router-dom";
-import ImgLogin from "../Images/ImgLogin.jpg";
+// import ImgLogin from "../Images/ImgLogin.jpg";
 import "./Login.css";
 
 function Login() {
@@ -86,7 +86,7 @@ function Login() {
             </button>
           </span>
 
-          <img className="img-login" src={ImgLogin} alt="" />
+          <img className="img-login" src={'../../Photos/ImgLogin.jpg'} alt="" />
         </div>
       </form>
     </div>

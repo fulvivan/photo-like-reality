@@ -2,7 +2,7 @@ import { useState } from "react";
 import useQueryParams from "../hooks/use-query-params";
 import { useNavigate } from "react-router-dom";
 import logger from "../utils/logger";
-import ImgSearch from "../Images/ImgSearch.jpg";
+// import ImgSearch from "../Images/ImgSearch.jpg";
 import "./Search.css";
 
 function Search() {
@@ -43,7 +43,7 @@ function Search() {
             className="button-search fa-solid fa-magnifying-glass"
           />
 
-          <img className="img-search" src={ImgSearch} alt="" loading="lazy" />
+          <img className="img-search" src={'../../Photos/ImgSearch.jpg'} alt="" />
         </div>
       </form>
     </section>
