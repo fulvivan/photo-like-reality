@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <div className="">
-      <div className="container-verse">
+      <div className="">
         <p className="verse">
           "In photography there is a reality so subtle that it becomes more real
           than reality"

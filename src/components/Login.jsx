@@ -50,7 +50,6 @@ function Login() {
           login(username, password);
         }}
       >
-        <h1 className="h1-login">Login</h1>
 
         <div className="box-login">
           <label htmlFor="login-username">Username</label>

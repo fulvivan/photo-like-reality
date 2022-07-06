@@ -45,7 +45,7 @@ function ThemeSwitch() {
           />
           <div className="slider round"></div>
         </label>
-        <p>Theme</p>
+        <p className="p-theme">Theme</p>
       </div>
     </>
   );
