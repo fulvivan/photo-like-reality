@@ -3,7 +3,6 @@ import { useContext } from "react";
 import AppContext from "./AppContext";
 import { registerUser } from "../logic";
 import { useNavigate } from "react-router-dom";
-import ImgRegister from "../Images/ImgRegister.jpg";
 import "./Register.css";
 
 function Register() {
@@ -95,7 +94,7 @@ function Register() {
             Register
           </button>
 
-          <img className="img-register" src={ImgRegister} alt="login" />
+          <img className="img-register" src={'../../Photos/ImgRegister.jpg'} alt="login" />
         </div>
       </form>
     </div>

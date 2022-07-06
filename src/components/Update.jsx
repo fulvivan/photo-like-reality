@@ -3,7 +3,6 @@ import { modifyUser } from "../logic";
 import AppContext from "./AppContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import ImgUpdate from "../Images/ImgUpdate.jpg";
 import "./Update.css";
 
 function Update() {
@@ -130,7 +129,7 @@ function Update() {
             Go Back To Profile
           </button>
 
-          <img className="img-update" src={ImgUpdate} alt="" />
+          <img className="img-update" src={'../../Photos/ImgUpdate.jpg'} alt="" />
         </div>
       </form>
     </section>

@@ -1,6 +1,5 @@
 import logger from "../utils/logger";
 import { useNavigate } from "react-router-dom";
-import ImgProfile from "../Images/ImgProfile.jpg";
 import "./Profile.css";
 
 function Profile({ onReset }) {
@@ -37,7 +36,7 @@ function Profile({ onReset }) {
               Sign out
             </button>
 
-            <img className="img-profile" src={ImgProfile} alt="" />
+            <img className="img-profile" src={'../../Photos/ImgProfile.jpg'} alt="" />
           </div>
         </div>
       </section>

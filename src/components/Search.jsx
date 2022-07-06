@@ -2,7 +2,6 @@ import { useState } from "react";
 import useQueryParams from "../hooks/use-query-params";
 import { useNavigate } from "react-router-dom";
 import logger from "../utils/logger";
-// import ImgSearch from "../Images/ImgSearch.jpg";
 import "./Search.css";
 
 function Search() {

@@ -3,7 +3,6 @@ import { useContext } from "react";
 import AppContext from "./AppContext";
 import { loginUser } from "../logic";
 import { useNavigate } from "react-router-dom";
-// import ImgLogin from "../Images/ImgLogin.jpg";
 import "./Login.css";
 
 function Login() {

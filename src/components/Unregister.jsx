@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { unregisterUser } from "../logic";
 import AppContext from "./AppContext";
 import { useNavigate } from "react-router-dom";
-import ImgUnregister from "../Images/ImgUnregister.jpg";
 import "./Unregister.css";
 
 function Unregister({ onReset }) {
@@ -75,7 +74,7 @@ function Unregister({ onReset }) {
               Go Back To Profile
             </button>
 
-            <img className="img-unregister" src={ImgUnregister} alt="" />
+            <img className="img-unregister" src={'../../Photos/ImgUnregister.jpg'} alt="" />
           </div>
         </form>
       </div>
