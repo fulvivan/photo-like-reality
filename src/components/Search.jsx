@@ -43,7 +43,7 @@ function Search() {
             className="button-search fa-solid fa-magnifying-glass"
           />
 
-          <img className="img-search" src={ImgSearch} alt="" />
+          <img className="img-search" src={ImgSearch} alt="" loading="lazy" />
         </div>
       </form>
     </section>
