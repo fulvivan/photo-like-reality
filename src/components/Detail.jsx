@@ -65,7 +65,7 @@ function Detail() {
   }, [item_id]);
 
   return (
-    <div className="container-detail gradient">
+    <div className="container-detail">
       {item && (
         <>
           <ul className="">

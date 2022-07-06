@@ -3,7 +3,7 @@
   /*wrap manda a capo le immagini, altrimenti trasbordano dalla pagina*/
   flex-wrap: wrap;
   padding: 0 15px;
-  min-height: 100vh;
+  min-height: 70vh;
   height: 100%;
 }
 

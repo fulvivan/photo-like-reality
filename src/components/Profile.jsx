@@ -14,7 +14,7 @@ function Profile({ onReset }) {
 
   return (
     <>
-      <section className="background-profile gradient">
+      <section className="background-profile">
         <div className="container-profile" id="profile">
           <div className="box-profile">
             <button

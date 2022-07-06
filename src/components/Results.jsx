@@ -86,7 +86,7 @@ function Results() {
   };
 
   return (
-    <div className="gradient">
+    <div className="">
       <p className="p-results">Results for: {query} </p>
 
       {items && items.length ? (

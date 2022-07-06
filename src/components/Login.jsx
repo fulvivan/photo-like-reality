@@ -34,7 +34,7 @@ function Login() {
   };
 
   return (
-    <div className="background-login gradient">
+    <div className="background-login">
       <form
         className="container-login"
         onSubmit={(event) => {

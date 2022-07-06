@@ -5,13 +5,16 @@
 }
 
 .navbar {
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-around;
   position: sticky;
   top: 0;
   align-items: center;
-  height: 13vh;
-  border-width: 1px;
+  height: 55px;
+  border-width:thin;
+  border-style:none none  solid none;
+  border-color: var(--border-nav);
   color: var(--font-color);
   z-index: 100;
 }
@@ -19,14 +22,14 @@
 .logo-nav {
   display: flex;
   position: absolute;
-  top: 3px;
+  top: 4%;
   left: 2%;
 }
 
 .theme {
-  margin: 10px 5px 5px 5px;
+  margin: 15px 5px 5px 5px;
   color: var(--primary-color);
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .nav-links {
@@ -43,8 +46,8 @@
 .register,
 .login {
   text-decoration: none;
-  font-size: 15px;
-  padding: 10px 10px;
+  font-size: 13px;
+  padding: 14px 5px 5px;
   margin: 0 10px;
   cursor: pointer;
   display: inline-flex;
@@ -57,10 +60,10 @@
 
 @media screen and (max-width: 780px) {
   .theme {
-    margin: 10px 40%;
+    margin: 10px 42%;
     color: var(--primary-color);
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .nav-links {
@@ -68,7 +71,11 @@
   }
 
   .nav-links-mobile {
+    background-color: var(--bg-color);
     position: absolute;
+    border-style: none none solid none;
+    border-color: var(--border-nav);
+    border-width: thin;
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -78,7 +85,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    top: 13vh;
+    top: 9vh;
     transition: all 0.5s ease-out;
     /*così non appare horizontal scroll padding:0; margin:0;*/
     z-index: 100;
@@ -93,7 +100,7 @@
   .register,
   .login {
     margin: 0;
-    font-size: 15px;
+    font-size: 13px;
     width: 100%;
     text-align: center;
     transition: all 0.5s ease;
@@ -106,13 +113,13 @@
   .mobile-menu-icon {
     display: block;
     position: absolute;
-    font-size: 4vh;
+    font-size: 3vh;
     color: var(--primary-color);
     background-color: transparent;
     border: none;
     outline: none;
-    top: 4vh;
-    right: 4vh;
+    top: 30%;
+    right: 5%;
     cursor: pointer;
   }
 }

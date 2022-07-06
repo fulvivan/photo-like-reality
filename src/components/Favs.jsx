@@ -76,7 +76,7 @@ function Favs() {
   };
 
   return (
-    <div className="gradient">
+    <div className="">
       <button
         type="button"
         className="button-goBack-favs "

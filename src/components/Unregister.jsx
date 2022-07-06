@@ -36,7 +36,7 @@ function Unregister({ onReset }) {
   };
 
   return (
-    <section className="background-unregister gradient">
+    <section className="background-unregister">
       <div className="container-unregister">
         <form
           className="container-unregister"

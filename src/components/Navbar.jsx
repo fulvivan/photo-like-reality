@@ -25,13 +25,13 @@ function Navbar() {
   }, [token]);
 
   return (
-    <nav className="navbar gradient">
+    <nav className="navbar">
       <div className="logo-nav" onClick={() => navigate("/")}>
         <Logo />
         {/* <Search/> */}
       </div>
       <ul
-        className={isMobile ? "nav-links-mobile gradient" : "nav-links"}
+        className={isMobile ? "nav-links-mobile" : "nav-links"}
         onClick={() => setIsMobile(false)}
       >
         <Link to="/" className="">

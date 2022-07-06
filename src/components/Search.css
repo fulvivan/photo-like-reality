@@ -1,8 +1,8 @@
 .background-search {
-  min-height: 100vh;
+  min-height: 87vh;
   height: 100%;
   z-index: -1;
-  background-color: var(--gradient);
+  background-color: var(--bg-color);
 }
 
 .img-search {

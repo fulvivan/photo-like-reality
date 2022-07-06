@@ -19,7 +19,7 @@ function Search() {
   };
 
   return (
-    <section className="background-search gradient">
+    <section className="background-search">
       <form
         className="container-search"
         onSubmit={(event) => {

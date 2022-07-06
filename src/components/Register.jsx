@@ -32,7 +32,7 @@ function Register() {
   };
 
   return (
-    <div className="background-register gradient">
+    <div className="background-register">
       <form
         className="container-register"
         onSubmit={(event) => {

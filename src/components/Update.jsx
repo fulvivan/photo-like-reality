@@ -34,7 +34,7 @@ function Update() {
   };
 
   return (
-    <section className="background-update gradient">
+    <section className="background-update">
       <form
         className="container-update"
         onSubmit={(event) => {

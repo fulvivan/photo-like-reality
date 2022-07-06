@@ -1,6 +1,6 @@
 .logo {
   display: block;
-  height: 12vh;
+  height: 50px;
   margin: auto;
   filter: var(--logo);
   background: transparent;

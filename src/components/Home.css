@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-.gradient {
-  z-index: 1;
-  background: var(--gradient);
-  background-size: 400% 400%;
-  width: 100%;
-  animation: 30s linear infinite running animate;
-  animation-direction: alternate;
-  background-attachment: fixed;
-}
-
-/*attacment fixed così il colore è già caricato in tutta la pagina e non si vede la striscia bianca sotto facendo scroll, perche deve caricarsi.*/
-
 .container-verse {
   margin: 0px 0 0 0;
 }
