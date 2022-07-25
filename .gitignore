@@ -11,8 +11,8 @@
 # production
 /build
 
-#keys API
-/src/logic/context.js
+# #keys API
+# /..context.js
 
 # misc
 .DS_Store
