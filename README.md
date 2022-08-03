@@ -3,7 +3,7 @@
 
 Photo Like Reality
 
-E' un'applicazione per la ricerca e download gratis di foto creata con HTML, CSS, JavaScript e React.
+E' un'applicazione web responsive per la ricerca e il download gratis di foto creata con HTML, CSS, JavaScript e React.
 
 Uso l'API di Unsplash per la parte delle foto e un'altra API per la parte di registrazione utente e favoriti.
 
