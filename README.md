@@ -1,13 +1,16 @@
 
-# Nome e Descrizione
+# Name and Description
 
 Photo Like Reality
 
-E' un'applicazione web responsive per la ricerca e il download gratis di foto creata con HTML, CSS, JavaScript e React.
+It is a free responsive web application to search and download photos created with HTML, CSS, JavaScript and React.
+Includes user registration and favorites section.
 
-Uso l'API di Unsplash per la parte delle foto e un'altra API per la parte di registrazione utente e favoriti.
+I use the Unsplash API for the part of the photos and another API for the part of user registration and favorites.
 
-# Schermate del progetto
+UED · Sviluppo front-end · React.js · JavaScript · CSS · HTML
+
+# Screenshot
 
 ![Screenshot (87)](https://user-images.githubusercontent.com/93666699/178225786-382fbad9-3029-4f31-8335-61f6b1d0f586.png)
 
@@ -15,4 +18,4 @@ Uso l'API di Unsplash per la parte delle foto e un'altra API per la parte di reg
 
 ## Demo
 
-Puoi vedere una demo del progetto qui [Photo Like Reality](https://photo-like-reality.onrender.com)
+[Photo Like Reality](https://photo-like-reality.onrender.com)
