@@ -86,7 +86,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    top: 9vh;
+    top:100%;
     transition: all 0.5s ease-out;
     /*così non appare horizontal scroll padding:0; margin:0;*/
     z-index: 100;
@@ -99,7 +99,8 @@
   .search,
   .favs,
   .register,
-  .login {
+  .login
+  {
     font-size: 15px;
     width: 100%;
     text-align: center;
@@ -112,7 +113,7 @@
   }
 
   .mobile-menu-icon {
-    display: block;
+    display:block;
     position: absolute;
     font-size: 3vh;
     color: var(--primary-color);
@@ -133,7 +134,7 @@
 
 @media screen and (max-width: 480px) {
   .theme {
-    margin: 10px 30%;
+    margin: 10px 40%;
   }
 }
 
