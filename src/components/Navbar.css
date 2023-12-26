@@ -70,6 +70,10 @@
     font-size: 15px;
   }
 
+  .navbar{
+    height: 9vh;
+  }
+
   .nav-links {
     display: none;
   }
@@ -133,12 +137,16 @@
 @media screen and (max-height: 500px) {
   .navbar {
     position: relative;
+    height: 15vh;
   }
 }
 
 @media screen and (max-width: 480px) {
   .theme {
     margin: 10px 40%;
+  }
+  .navbar{
+    height: 11vh;
   }
 }
 
