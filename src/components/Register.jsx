@@ -49,7 +49,7 @@ function Register() {
           register(name, username, email, password);
         }}
       >
-        <div className="box-register">
+        <div className="box-register label-register">
           <label htmlFor="register-name">Name</label>
           <input
             className="field-register"
@@ -93,8 +93,6 @@ function Register() {
           <button type="submit" className="button-register">
             Register
           </button>
-
-          <img className="img-register" src={'../../Photos/ImgRegister.jpg'} alt="login" />
         </div>
       </form>
     </div>

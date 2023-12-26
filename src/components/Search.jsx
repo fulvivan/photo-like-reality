@@ -39,10 +39,8 @@ function Search() {
           />
           <button
             type="submit"
-            className="button-search fa-solid fa-magnifying-glass"
+            className="button-search fa-solid fa-magnifying-glass icon-search"
           />
-
-          <img className="img-search" src={'../../Photos/ImgSearch.jpg'} alt="" />
         </div>
       </form>
     </section>

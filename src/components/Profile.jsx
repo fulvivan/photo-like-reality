@@ -35,8 +35,6 @@ function Profile({ onReset }) {
             <button type="button" className="button-profile" onClick={onReset}>
               Sign out
             </button>
-
-            <img className="img-profile" src={'../../Photos/ImgProfile.jpg'} alt="" />
           </div>
         </div>
       </section>

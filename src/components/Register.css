@@ -1,14 +1,15 @@
 .background-register {
-  min-height: 100%;
+  min-height: 87vh;
   height: 100%;
   z-index: -1;
-  background-color: var(--bg-color);
+  background-image: url(../../public/Photos/ImgLogin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.img-register {
-  max-width: 280px;
-  margin: 10px 2px 2px;
-  border-radius: 5px;
+.label-register {
+  color: white;
 }
 
 .container-register {
@@ -26,36 +27,36 @@
   align-items: center;
   flex-direction: column;
   max-width: 300px;
-  padding: 1rem;
-  border-style: solid;
-  border-radius: 5px;
-  border-width: thin;
-  background-color: var(--bg-color);
-  margin: 10vh 0 5vh 0;
+  padding: 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: transparent;
+  backdrop-filter: blur(8px);
 }
 
 .field-register {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 0px 0px 3px var(--bg-inverse);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 9px;
+  padding: 9px;
   font-size: 1rem;
   cursor: text;
-  color: var(--primary-color);
+  color: white;
 }
 
 .button-register {
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
+  border-radius: 10px;
+  border: 2px solid white;
   margin: 5px;
   padding: 10px;
   font-size: 1rem;
   cursor: pointer;
   min-width: 5.5rem;
-  box-shadow: 0px 0px 3px var(--bg-inverse);
-  color: var(--primary-color);
+  color: white;
+}
+
+.button-register:hover {
+  background-color: rgb(141, 173, 255);
 }

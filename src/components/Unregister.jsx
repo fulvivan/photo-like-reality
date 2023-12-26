@@ -47,7 +47,7 @@ function Unregister({ onReset }) {
             unregister(password);
           }}
         >
-          <div className="box-unregister">
+          <div className="box-unregister label-unregister">
             <label htmlFor="unregister-password">Password</label>
             <input
               className="field-unregister"
@@ -73,8 +73,6 @@ function Unregister({ onReset }) {
             >
               Go Back To Profile
             </button>
-
-            <img className="img-unregister" src={'../../Photos/ImgUnregister.jpg'} alt="" />
           </div>
         </form>
       </div>

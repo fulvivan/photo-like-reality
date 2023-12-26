@@ -1,10 +1,14 @@
 .p-results {
   display: block;
+  background-color: rgb(219, 219, 219);
   padding: 10px 0 10px 0;
-  font-size: 20px;
+  margin: 20px;
+  font-size: 15px;
   text-align: center;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform:uppercase;
+  border: 1px solid black;
+  color: black;
 }
 
 .box-photos-results {
@@ -134,7 +138,6 @@
     width: 100%;
     max-height: 75vh;
     min-width: 0;
-    /* overflow: hidden; */
   }
 }
 /*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/

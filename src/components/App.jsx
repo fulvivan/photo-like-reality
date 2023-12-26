@@ -51,9 +51,9 @@ function App() {
           onModal: showModal,
         }}
       >
-        {spinner && <Spinner />}
-
         <Navbar />
+
+        {spinner && <Spinner />}
 
         {modal && (
           <Modal
@@ -79,7 +79,10 @@ function App() {
             element={<Profile onReset={resetToken} />}
           />
           <Route path="profile/update" element={<Update />} />
-          <Route path="profile/unregister" element={<Unregister onReset={resetToken}/>} />
+          <Route
+            path="profile/unregister"
+            element={<Unregister onReset={resetToken} />}
+          />
           <Route exact path="/favs" element={<Favs />} />
         </Routes>
       </AppContext.Provider>

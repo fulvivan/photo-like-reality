@@ -66,7 +66,7 @@ function Update() {
           update(data);
         }}
       >
-        <div className="box-update">
+        <div className="box-update label-update">
           <label htmlFor="update-password">Old Password</label>
           <input
             className="field-update"
@@ -128,8 +128,6 @@ function Update() {
           >
             Go Back To Profile
           </button>
-
-          <img className="img-update" src={'../../Photos/ImgUpdate.jpg'} alt="" />
         </div>
       </form>
     </section>

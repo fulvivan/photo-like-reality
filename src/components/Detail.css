@@ -3,10 +3,13 @@
   justify-content: center;
   align-items: center;
   right: 45%;
-  color: var(--font-color);
   font-weight: bold;
+  min-height: 87vh;
   height: 100%;
-  width: auto;
+  background-image: url(../../public/Photos/fondo-result.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .detail-image {
@@ -15,6 +18,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 2%;
+  border-style: solid;
   margin: 25% 0% 10% 0%;
   height: auto;
 }
@@ -25,7 +29,7 @@
 
 .card {
   cursor: pointer;
-  color: var(--secondary-color);
+  color: rgb(11, 22, 215);
   margin: 4px;
   border-style: none none solid none;
   border-width: thin;
@@ -34,7 +38,7 @@
 
 .card1 {
   cursor: pointer;
-  color: var(--secondary-color);
+  color: rgb(11, 22, 215);
   border-width: thin;
   font-weight: lighter;
 }
@@ -59,6 +63,10 @@
 
 .fav-detail {
   margin-left: 5px;
+  border-radius: 8px;
+  border: 2px solid rgb(11, 22, 215);
+  cursor: pointer;
+  background-color: rgb(11, 22, 215);
 }
 
 @media (max-width: 480px) {

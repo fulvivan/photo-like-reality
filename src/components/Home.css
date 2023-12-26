@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.homepage{
+  padding: 70px 0 0 0;
+}
+
 .verse {
   display: flex;
   justify-content: center;

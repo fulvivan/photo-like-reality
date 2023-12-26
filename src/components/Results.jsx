@@ -87,7 +87,7 @@ function Results() {
 
   return (
     <div className="">
-      <p className="p-results">Results for: {query} </p>
+      <p className="p-results">Results for : {query} </p>
 
       {items && items.length ? (
         <ul className="box-photos-results">

@@ -6,7 +6,7 @@ function Home() {
   logger.debug("Home -> render");
 
   return (
-    <div className="">
+    <div className="homepage">
       <div className="">
         <p className="verse">
           "In photography there is a reality so subtle that it becomes more real

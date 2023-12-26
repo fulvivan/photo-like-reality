@@ -49,8 +49,7 @@ function Login() {
           login(username, password);
         }}
       >
-
-        <div className="box-login">
+        <div className="box-login label-login">
           <label htmlFor="login-username">Username</label>
           <input
             className="field-login "
@@ -84,8 +83,6 @@ function Login() {
               Join
             </button>
           </span>
-
-          <img className="img-login" src={'../../Photos/ImgLogin.jpg'} alt="" />
         </div>
       </form>
     </div>
