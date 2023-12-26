@@ -71,7 +71,7 @@
   }
 
   .navbar{
-    height: 9vh;
+    height: 5vh;
   }
 
   .nav-links {
@@ -137,7 +137,10 @@
 @media screen and (max-height: 500px) {
   .navbar {
     position: relative;
-    height: 15vh;
+    height: 17vh;
+  }
+  .mobile-menu-icon{
+    top: 6vh;
   }
 }
 
