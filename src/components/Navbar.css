@@ -8,23 +8,17 @@
   background: transparent;
   backdrop-filter: blur(8px);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: sticky;
   top: 0px;
   align-items: center;
-  height: 13vh;
+  height: 90px;
+  padding: 20px 40px;
   border-width: thin;
   border-style: none none solid none;
   border-color: var(--border-nav);
   color: var(--font-color);
   z-index: 100;
-}
-
-.logo-nav {
-  display: flex;
-  position: absolute;
-  top: 1.5vh;
-  left: 2%;
 }
 
 .theme {
@@ -36,9 +30,9 @@
 .nav-links {
   display: flex;
   list-style: none;
-  position: absolute;
-  right: 2%;
-  top: 7px;
+  align-items: center;
+  gap: 32px;
+  padding-inline: 24px;
 }
 
 .home,
@@ -62,16 +56,12 @@
   display: none;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 53rem) {
   .theme {
     margin: 10px 42%;
     color: var(--primary-color);
     text-align: center;
     font-size: 15px;
-  }
-
-  .navbar{
-    height: 5vh;
   }
 
   .nav-links {
@@ -90,15 +80,11 @@
     left: 0;
     right: 0;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     top: 100%;
     transition: all 0.5s ease-out;
     /*così non appare horizontal scroll padding:0; margin:0;*/
     z-index: 100;
-    padding: 0;
-    margin: 0;
   }
 
   .home,
@@ -122,34 +108,11 @@
 
   .mobile-menu-icon {
     display: block;
-    position: absolute;
-    font-size: 3vh;
+    margin-right: 10px;
+    font-size: 20px;
     color: var(--primary-color);
     background-color: transparent;
-    border: none;
-    outline: none;
-    top: 4vh;
-    right: 5%;
     cursor: pointer;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  .navbar {
-    position: relative;
-    height: 17vh;
-  }
-  .mobile-menu-icon{
-    top: 6vh;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .theme {
-    margin: 10px 40%;
-  }
-  .navbar{
-    height: 11vh;
   }
 }
 

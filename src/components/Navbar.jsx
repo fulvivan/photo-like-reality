@@ -28,7 +28,6 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo-nav" onClick={() => navigate("/")}>
         <Logo />
-        {/* <Search/> */}
       </div>
       <ul
         className={isMobile ? "nav-links-mobile" : "nav-links"}
@@ -37,7 +36,6 @@ function Navbar() {
         <Link to="/" className="">
           <li className="home">Home</li>
         </Link>
-
         <Link to="/search" className="">
           <li className="search">Search</li>
         </Link>

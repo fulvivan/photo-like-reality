@@ -1,7 +1,6 @@
 .logo {
-  display: block;
-  height: 50px;
-  margin: auto;
+  height: 70px;
+  margin-left: 10px;
   filter: var(--logo);
   background: transparent;
   cursor: pointer;
