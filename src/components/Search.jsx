@@ -37,6 +37,7 @@ function Search() {
             name="query"
             defaultValue={query}
           />
+
           <button
             type="submit"
             className="button-search fa-solid fa-magnifying-glass icon-search"

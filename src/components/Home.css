@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.homepage{
+.homepage {
   padding: 70px 0 0 0;
 }
 
@@ -15,7 +15,7 @@
   flex-direction: column;
   padding: 10px;
   font-size: 19px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   line-height: 1.6;
   color: var(--primary-color);
@@ -44,10 +44,11 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 15px;
+  justify-content: space-around;
 }
 
 .list-photos-home {
-  height: 50vh;
+  height: 370px;
   flex-grow: 1;
 }
 
@@ -56,83 +57,31 @@
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  padding: 0px;
-  filter: grayscale(100%); /*IE6-9*/
-  -webkit-filter: grayscale(100%); /*chrome- safari-*/
 
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  /* -moz-transition: all 0.2s; */
-  transform: scale(0.95);
+  padding: 20px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 
-.photo-home:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
-
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  /* -moz-transform: scale(1.1); */
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
 .photo-last-home {
   flex-grow: 10;
 }
+
 /*.photo-last-home è un <li> vuoto vhe aiuta l'impaginazione*/
-
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .list-photos-home {
-    height: 30vh;
-  }
-}
-/*Quando lo schermo viewport è più alto che largo*/
-
-@media (max-height: 480px) {
-  .list-photos-home {
-    height: 80vh;
-  }
-}
-/*con piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
-
-@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-  .box-photos-home {
-    flex-direction: row;
-  }
-
-  .list-photos-home {
-    height: auto;
-    width: 100%;
-  }
-
-  .photo-home {
-    width: 100%;
-    max-height: 75vh;
-    min-width: 0;
-  }
-}
-/*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
-
-@media (hover:none) {
-  .photo-home {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .verse {
-    font-size: 15px;
-  }
-  .text {
-    font-size: 15px;
-  }
-}

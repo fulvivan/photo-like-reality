@@ -10,11 +10,8 @@
   background: transparent;
   outline: none;
   tab-size: 0;
-  padding-inline-end: 0;
-  padding-inline-start: 0;
-  ::-webkit-scrollbar {
-    display: none;
-  }
+  /* padding-inline-end: 0;
+  padding-inline-start: 0; */
   cursor: default;
   font-family: "Montserrat", sans-serif;
   list-style-type: none;

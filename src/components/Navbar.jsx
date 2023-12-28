@@ -14,6 +14,7 @@ function Navbar() {
 
   const [isMobile, setIsMobile] = useState(false);
 
+
   useEffect(() => {
     logger.debug("Navbar -> useEffect");
 

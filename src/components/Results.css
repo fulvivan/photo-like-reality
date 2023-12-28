@@ -1,12 +1,12 @@
 .p-results {
   display: block;
   background-color: rgb(219, 219, 219);
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
   margin: 20px;
   font-size: 15px;
   text-align: center;
   font-weight: bold;
-  text-transform:uppercase;
+  text-transform: uppercase;
   border: 1px solid black;
   color: black;
 }
@@ -14,13 +14,12 @@
 .box-photos-results {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 15px;
-  min-height: 100vh;
-  height: 100%;
+  margin: 0 15px;
+  justify-content: space-around;
 }
 
 .list-photos-results {
-  height: 50vh;
+  height: 350px;
   flex-grow: 1;
   position: relative;
 }
@@ -37,7 +36,7 @@
   width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  padding: 5px;
+  padding: 15px;
 }
 
 .over-results {
@@ -85,10 +84,11 @@
 /*Position absolute con position relative di list-photos permette di mettere il cuore sopra la foto*/
 
 .load-more-button {
-  padding: 5px;
+  margin: 10px;
+  padding: 15px;
   font-size: 20px;
   font-weight: bold;
-  border-style: solid;
+  border: 10px solid;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -101,43 +101,13 @@
 
 .p-load {
   display: block;
-  padding: 10px 0 10px 0;
-  font-size: 20px;
+  padding: 10px 0;
+  font-size: 15px;
+  border: solid;
+  margin: 20px;
   text-align: center;
-  font-weight: lighter;
+  font-weight: bold;
+  background-color: rgb(219, 219, 219);
   text-transform: capitalize;
-  color: var(--primary-color);
+  color: black;
 }
-
-@media (max-aspect-ratio: 1/1) {
-  .list-photos-results {
-    height: 30vh;
-  }
-}
-/*Quando lo schermo viewport è più alto che largo*/
-
-@media (max-height: 480px) {
-  .list-photos-results {
-    height: 80vh;
-  }
-}
-/*con piccoli dispositivi in ​​​​orizzontale, aumentare l'altezza delle foto aiuta a vederle il più grande possibile*/
-
-@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-  .box-photos-results {
-    flex-direction: row;
-  }
-
-  .list-photos-results {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .photos-results {
-    width: 100%;
-    max-height: 75vh;
-    min-width: 0;
-  }
-}
-/*La maggior parte dei telefoni non è sufficientemente ampia da consentire a flexbox di svolgere correttamente il proprio lavoro senza miniaturizzare le foto, quindi qui ho deciso di non provare a adattare più foto per riga. Tuttavia, vale la pena impostare un'altezza massima qui in modo da avere almeno un suggerimento sulla prossima foto nell'elenco.*/
