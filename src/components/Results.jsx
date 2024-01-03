@@ -55,6 +55,7 @@ function Results() {
         onModal(message, "warn");
       }
     })();
+    //eslint-disable-next-line
   }, [query, page]);
 
   const toggleFav = async (item_id) => {
